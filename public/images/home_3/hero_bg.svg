@@ -49,11 +49,11 @@
 </filter>
 <linearGradient id="paint0_linear_32_290" x1="570" y1="3.15307e-05" x2="873.014" y2="993.53" gradientUnits="userSpaceOnUse">
 <stop stop-color="#86BBF1" offset="0"/>
-<stop offset="1" stop-color="#D2EAEF"/>
+<stop offset="1" stop-color="#f2e6be"/>
 </linearGradient>
 <linearGradient id="paint1_linear_32_290" x1="570" y1="3.14981e-05" x2="872.44" y2="992.677" gradientUnits="userSpaceOnUse">
 <stop stop-color="#86BBF1" offset="0"/>
-<stop offset="1" stop-color="#D2EAEF"/>
+<stop offset="1" stop-color="#f2e6be"/>
 </linearGradient>
 <radialGradient id="paint2_radial_32_290" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(358 321) rotate(90) scale(286)">
 <stop stop-color="#86BBF1" offset="0"/>

@@ -4,7 +4,7 @@
 .cs_accordians.cs_style1 {
   .cs_accordian {
     border-radius: 25px;
-    border: 1px solid #d2eaef;
+    border: 1px solid #f2e6be;
     background: rgba(39, 71, 96, 0);
     transition: all 0.4s ease;
     width: 100%;
@@ -15,7 +15,7 @@
       margin-bottom: 20px;
     }
     &.active {
-      background-color: #d2eaef;
+      background-color: #f2e6be;
       margin-left: 50px;
       @media (max-width: 991px) {
         margin-left: 0;
@@ -122,7 +122,7 @@
         margin-left: 0px;
         background-color: transparent;
         .cs_accordian_head {
-          background: linear-gradient(119deg, #d2eaef 17.16%, #86bbf1 89.78%);
+          background: linear-gradient(119deg, #f2e6be 17.16%, #86bbf1 89.78%);
           border-bottom: 1px solid $accent;
           border-radius: 20px 20px 0 0;
         }

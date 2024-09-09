@@ -34,7 +34,7 @@ export default function AboutSectionStyle3({
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#86BBF1" offset={0} />
-              <stop offset={1} stopColor="#D2EAEF" />
+              <stop offset={1} stopColor="#f2e6be" />
             </linearGradient>
           </defs>
         </svg>
