@@ -175,7 +175,7 @@ export default function Home() {
   return (
     <>
       <Hero
-        title="Your Partner in Health and Wellness"
+        title="D Clinic"
         subTitle="We are committed to providing you with the best medical and healthcare services to help you live healthier and happier."
         bgUrl="/images/home_1/hero_bg.jpeg"
         imgUrl={heroImage}
