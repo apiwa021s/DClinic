@@ -175,12 +175,10 @@ export default function Home() {
   return (
     <>
       <Hero
-        title="D Clinic"
-        subTitle="We are committed to providing you with the best medical and healthcare services to help you live healthier and happier. (ความรักเป็นสิ่งที่สวยงาม) "
-        bgUrl="/images/home_1/hero_bg.jpeg"
+        title="D Bangkok Clinic"
+        subTitle="ยินดีต้อนรับสู่ ดีแบ็งค็อกคลินิกเวชกรรม คลินิกความงามย่านทองหล่อ ใกล้กับ BTS ทองหล่อ ทางออก 3 เราพร้อมให้บริการเสริมความสวยงามหลากหลาย ด้วยทีมแพทย์ผู้เชี่ยวชาญ"
+        bgUrl="/images/home_1/hero_bg.jpg"
         imgUrl={heroImage}
-        videoBtnText="See how we work"
-        videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"
         infoList={[
           {
             title: 'Hotline',
@@ -211,7 +209,7 @@ export default function Home() {
         bottomLg={140}
         bottomXl={100}
       >
-        <FeaturesSection sectionTitle="Our Values" data={featureListData} />
+        <FeaturesSection sectionTitle="บริการของเรา" data={featureListData} />
       </Section>
       {/* End Feature Section */}
 

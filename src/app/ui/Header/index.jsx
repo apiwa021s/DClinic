@@ -46,7 +46,7 @@ export default function Header({ logoSrc, variant }) {
                       }`}
                   >
                     <li className="menu-item-has-children">
-                      <Link href="/">Home</Link>
+                      <Link href="/">หน้าหลัก</Link>
                       <DropDown>
                         <ul>
                           <li>
@@ -71,7 +71,7 @@ export default function Header({ logoSrc, variant }) {
                       <Link href="/doctors">Find Doctor</Link>
                     </li>
                     <li>
-                      <Link href="/blog">Blog</Link>
+                      <Link href="/blog">บทความ</Link>
                     </li>
                     <li className="menu-item-has-children">
                       <Link href="/">Pages</Link>
@@ -109,7 +109,7 @@ export default function Header({ logoSrc, variant }) {
                       </DropDown>
                     </li>
                     <li>
-                      <Link href="/contact">Contact</Link>
+                      <Link href="/contact">เกี่ยวกับเรา</Link>
                     </li>
                   </ul>
                   <span

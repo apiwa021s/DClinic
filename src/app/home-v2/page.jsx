@@ -201,7 +201,7 @@ export default function HomeStyle2() {
         subTitle="Our team of experienced doctors and healthcare professionals are
         committed to providing quality care and personalized attention to
         our patients."
-        bgUrl="/images/home_2/hero_bg.jpeg"
+        bgUrl="/images/home_2/hero_bg.jpg"
         imgUrl="/images/home_2/patents.png"
         videoBtnText="See how we work"
         videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"
