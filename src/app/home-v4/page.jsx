@@ -247,7 +247,7 @@ export default function HomeStyle4() {
       <HeroStyle4
         title="Your Path to Health and Wellness Begins Here"
         subTitle="Your Trusted Partner in Comprehensive Healthcare, Where Your Well-being is Our Priority, Providing Quality Care and Support for All Your Health Needs."
-        bgUrl="/images/home_4/hero_bg.jpeg"
+        bgUrl="/images/home_4/hero_bg.jpg"
         imgUrl={imgUrl}
         imgUrl2={imgUrl2}
         imgUrl3={imgUrl3}
