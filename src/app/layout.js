@@ -1,15 +1,16 @@
-import { Figtree, Poppins } from 'next/font/google';
+import { Figtree, Prompt } from 'next/font/google';
 import './sass/index.scss';
 
-const figtree = Figtree({
+const prompt = Prompt({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-primary',
 });
-const poppins = Poppins({
+
+const prompt2 = Prompt({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-secondary',
+  variable: '--font-secondary', // Update this if needed to match your usage
 });
 
 export const metadata = {
@@ -33,7 +34,7 @@ export default function RootLayout({ children }) {
         <meta name="author" content="Laralink" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={`${figtree.variable} ${poppins.variable}`}>
+      <body className={`${prompt.variable} ${prompt2.variable}`}>
         {children}
       </body>
     </html>

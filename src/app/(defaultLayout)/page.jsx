@@ -176,7 +176,7 @@ export default function Home() {
     <>
       <Hero
         title="D Clinic"
-        subTitle="We are committed to providing you with the best medical and healthcare services to help you live healthier and happier."
+        subTitle="We are committed to providing you with the best medical and healthcare services to help you live healthier and happier. (ความรักเป็นสิ่งที่สวยงาม) "
         bgUrl="/images/home_1/hero_bg.jpeg"
         imgUrl={heroImage}
         videoBtnText="See how we work"
