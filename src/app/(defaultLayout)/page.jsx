@@ -175,8 +175,8 @@ export default function Home() {
   return (
     <>
       <Hero
-        title="D Clinic"
-        subTitle="We are committed to providing you with the best medical and healthcare services to help you live healthier and happier."
+        title="D Bangkok Clinic"
+        subTitle="ยินดีต้อนรับสู่ ดีแบ็งค็อกคลินิกเวชกรรม คลินิกความงามย่านทองหล่อ ใกล้กับ BTS ทองหล่อ ทางออก 3 เราพร้อมให้บริการเสริมความสวยงามหลากหลาย ด้วยทีมแพทย์ผู้เชี่ยวชาญ"
         bgUrl="/images/home_1/hero_bg.jpeg"
         imgUrl={heroImage}
         videoBtnText="See how we work"

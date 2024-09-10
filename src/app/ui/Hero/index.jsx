@@ -27,13 +27,13 @@ export default function Hero({
             <p className="cs_hero_subtitle cs_fs_20 cs_heading_color">
               {parse(subTitle)}
             </p>
-            <div className="cs_hero_btn_wrap">
+            {/* <div className="cs_hero_btn_wrap">
               <VideoModal
                 videoUrl={videoUrl}
                 videoBtnText={videoBtnText}
                 variant="cs_heading_color"
               />
-            </div>
+            </div> */}
           </div>
           <div className="cs_hero_img">
             <Image src={imgUrl} alt="Hero" placeholder="blur" />
