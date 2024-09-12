@@ -88,26 +88,27 @@ const faqData = [
 ];
 const blogData = [
   {
-    title: 'The Benefits of Mindfulness Meditation for Stress and Anxiety',
-    thumbUrl: '/images/home_1/post_1.jpeg',
-    date: 'May 1, 2023',
-    btnText: 'Learn More',
+    title:
+      'ทำศัลยกรรม อายุเท่าไหร่ ? ตอบข้อสงสัยของวัยรุ่นที่อยากทำศัลยกรรม พร้อมข้อควรรู้ก่อนตัดสินใจ',
+    thumbUrl: '/images/blog/post_1.jpeg',
+    date: 'March 12',
+    btnText: 'รายละเอียดเพิ่มเติม',
     href: '/blog/blog-details',
     socialShare: true,
   },
   {
-    title: 'Healthy Eating on a Budget: Tips and Strategies',
-    thumbUrl: '/images/home_1/post_2.jpeg',
-    date: 'May 4, 2023',
-    btnText: 'Learn More',
+    title: `การทำตาสองชั้นนอกจากจะช่วยเรื่องความสวยงามแล้ว ยังสามารถแก้ปัญหาดวงตาได้อีกด้วย ทำตาสองชั้นปัจจุบันมีข้อดี ข้อเสียยังไง มาดูกันเลย`,
+    thumbUrl: '/images/blog/post_2.jpeg',
+    date: 'March 11',
+    btnText: 'รายละเอียดเพิ่มเติม',
     href: '/blog/blog-details',
     socialShare: true,
   },
   {
-    title: 'The Importance of Regular Cancer Screenings and Early Detection',
-    thumbUrl: '/images/home_1/post_3.jpeg',
-    date: 'May 1, 2023',
-    btnText: 'Learn More',
+    title: 'ยกคิ้วแบบไม่ต้องพักฟื้น ด้วยเทคนิค ‘Direct Brow lifting’',
+    thumbUrl: '/images/blog/post_3.jpeg',
+    date: 'March 9',
+    btnText: 'รายละเอียดเพิ่มเติม',
     href: '/blog/blog-details',
     socialShare: true,
   },
@@ -174,6 +175,7 @@ const departmentData = [
 export default function Home() {
   return (
     <>
+    
       <Hero
         title="D Bangkok Clinic"
         subTitle="ยินดีต้อนรับสู่ ดีแบ็งค็อกคลินิกเวชกรรม คลินิกความงามย่านทองหล่อ ใกล้กับ BTS ทองหล่อ ทางออก 3 เราพร้อมให้บริการเสริมความสวยงามหลากหลาย ด้วยทีมแพทย์ผู้เชี่ยวชาญ"

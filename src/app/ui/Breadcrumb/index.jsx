@@ -29,7 +29,9 @@ export default function Breadcrumb({ title }) {
         ))}
       </ol>
       <div className="cs_height_18" />
-      <h1 className="cs_fs_72 mb-0">{title}</h1>
+      <h1 className="cs_fs_72 mb-0">{title}<span c="text-orange-200"> Blog</span></h1>
+      <p className="pt-1 text-sky-400">รวมบทความน่าสนใจเกี่ยวกับการทำตาสองชั้น และศัลยกรรมตาอื่นๆ ใครคิดจะทำตาสองชั้นต้องอ่าน</p>
+      
     </div>
   );
 }
