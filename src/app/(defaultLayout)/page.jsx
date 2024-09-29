@@ -293,26 +293,6 @@ export default function Home() {
 
       {/* End Banner Section */}
 
-      {/* Start Blog Section */}
-      <Section topMd={190} topLg={145} topXl={105}>
-        <BlogSection
-          sectionTitle="Latest Update"
-          sectionTitleUp="BLOG POSTS"
-          data={blogData}
-        />
-      </Section>
-      {/* End Blog Section */}
-
-      {/* Start Appointment Section */}
-      {/* <Section topMd={190} topLg={145} topXl={105} id="appointment">
-        <AppointmentSection
-          sectionTitle="Appointment"
-          sectionTitleUp="BOOK AN"
-          imgUrl={appointmentImg}
-        />
-      </Section> */}
-      {/* End Appointment Section */}
-
       {/* Start FAQ Section */}
       <Section topMd={190} topLg={145} topXl={105}>
         <FaqSection
