@@ -265,18 +265,19 @@ export default function Home() {
 
       {/* Start Testimonial */}
       <Section
-        topMd={185}
-        topLg={140}
-        topXl={100}
-        bottomMd={200}
-        bottomLg={150}
-        bottomXl={110}
-      >
-        <TestimonialSection
-          sectionTitle="Some Reviews"
-          sectionTitleDown="Of our clients"
-        />
-      </Section>
+  topMd={185}
+  topLg={140}
+  topXl={100}
+  bottomMd={200}
+  bottomLg={150}
+  bottomXl={110}
+>
+  <TestimonialSection
+    sectionTitle="รีวิวจากลูกค้าของเรา"
+    sectionTitleDown="ความพึงพอใจจากผู้ใช้บริการ"
+  />
+</Section>
+
       {/* End Testimonial */}
 
       {/* Start Banner Section */}
