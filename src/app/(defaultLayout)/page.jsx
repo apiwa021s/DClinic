@@ -118,30 +118,31 @@ const blogData = [
 ];
 const awardData = [
   {
-    title: 'Malcolm Baldrige National Quality Award',
+    title: 'คลินิกที่ได้รับมาตรฐานระดับสากล',
     subTitle:
-      'This award recognizes healthcare organizations that have demonstrated excellence in leadership, strategic planning, customer and employee satisfaction, and operational efficiency.',
+      'D Bangkok Clinic ได้รับการรับรองมาตรฐานระดับสากลในด้านความปลอดภัยและคุณภาพของการให้บริการเสริมความงาม.',
     iconUrl: '/images/icons/award.svg',
   },
   {
-    title: 'HIMSS Davies Award',
+    title: 'รางวัลคลินิกเสริมความงามยอดเยี่ยมแห่งปี',
     subTitle:
-      'This award recognizes healthcare organizations that have used health information technology to improve patient outcomes and reduce costs.',
+      'เราภูมิใจที่ได้รับรางวัลคลินิกเสริมความงามยอดเยี่ยมแห่งปีจากสมาคมความงามประเทศไทย.',
     iconUrl: '/images/icons/award.svg',
   },
   {
-    title: 'Healthgrades National’s Best Hospital',
+    title: 'การรับรองจากแพทยสภา',
     subTitle:
-      'This recognition is given to hospitals that have achieved high ratings for clinical quality and patient safety across multiple specialties and procedures.',
+      'ทีมแพทย์ของเราผ่านการรับรองจากแพทยสภา และมีประสบการณ์ในด้านการดูแลผิวพรรณและความงามอย่างมืออาชีพ.',
     iconUrl: '/images/icons/award.svg',
   },
   {
-    title: 'Joint Commission Gold Seal of Approval',
+    title: 'มาตรฐานการบริการยอดเยี่ยม',
     subTitle:
-      'This recognition is given to hospitals that have met rigorous standards for patient safety and quality of care.',
+      'D Bangkok Clinic ได้รับการยอมรับในด้านมาตรฐานการบริการและความพึงพอใจของลูกค้า ด้วยการดูแลที่เป็นมิตรและใส่ใจในทุกรายละเอียด.',
     iconUrl: '/images/icons/award.svg',
   },
 ];
+
 const departmentData = [
   {
     title: 'โปรทำตาสองชั้น ลด 20%',
@@ -248,47 +249,48 @@ export default function Home() {
 
       {/* Start Departments Section */}
       <Section topMd={185} topLg={150} topXl={110}>
-  <DepartmentSection
-    sectionTitle="โปรเสริมความงาม"
-    bgUrl="/images/home_1/department_bg.svg"
-    data={departmentData}
-  />
-</Section>
+        <DepartmentSection
+          sectionTitle="โปรเสริมความงาม"
+          bgUrl="/images/home_1/department_bg.svg"
+          data={departmentData}
+        />
+      </Section>
 
       {/* End Departments Section */}
 
       {/* Start Award Section */}
       <Section topMd={185} topLg={140} topXl={100}>
-        <AwardSection sectionTitle="Departments" data={awardData} />
+        <AwardSection sectionTitle="รางวัลของเรา" data={awardData} />
       </Section>
       {/* End Award Section */}
 
       {/* Start Testimonial */}
       <Section
-  topMd={185}
-  topLg={140}
-  topXl={100}
-  bottomMd={200}
-  bottomLg={150}
-  bottomXl={110}
->
-  <TestimonialSection
-    sectionTitle="รีวิวจากลูกค้าของเรา"
-    sectionTitleDown="ความพึงพอใจจากผู้ใช้บริการ"
-  />
-</Section>
+        topMd={185}
+        topLg={140}
+        topXl={100}
+        bottomMd={200}
+        bottomLg={150}
+        bottomXl={110}
+      >
+        <TestimonialSection
+          sectionTitle="รีวิวจากลูกค้าของเรา"
+          sectionTitleDown="ความพึงพอใจจากผู้ใช้บริการ"
+        />
+      </Section>
 
       {/* End Testimonial */}
 
       {/* Start Banner Section */}
       <Section>
-        <Banner
-          bgUrl="/images/home_1/cta_bg.svg"
-          imgUrl={bannerImg}
-          title="Don’t Let Your Health Take a Backseat!"
-          subTitle="Schedule an appointment with one of our experienced medical professionals today!"
-        />
-      </Section>
+  <Banner
+    bgUrl="/images/home_1/cta_bg.svg"
+    imgUrl={bannerImg}
+    title="เปลี่ยนคุณให้สวยขึ้นในทุกมุมมอง!"
+    subTitle="นัดหมายเพื่อรับคำปรึกษาจากทีมแพทย์ผู้เชี่ยวชาญด้านความงามได้แล้ววันนี้!"
+  />
+</Section>
+
       {/* End Banner Section */}
 
       {/* Start Blog Section */}
