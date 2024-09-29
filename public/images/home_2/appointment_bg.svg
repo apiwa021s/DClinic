@@ -60,11 +60,11 @@
 </filter>
 <linearGradient id="paint0_linear_32_293" x1="1360.97" y1="830" x2="590.057" y2="1733.53" gradientUnits="userSpaceOnUse">
 <stop stop-color="#86BBF1"/>
-<stop offset="1" stop-color="#f2e6be"/>
+<stop offset="1" stop-color="#D2EAEF"/>
 </linearGradient>
 <linearGradient id="paint1_linear_32_293" x1="0" y1="0" x2="1960.49" y2="159.99" gradientUnits="userSpaceOnUse">
 <stop stop-color="#86BBF1"/>
-<stop offset="1" stop-color="#f2e6be"/>
+<stop offset="1" stop-color="#D2EAEF"/>
 </linearGradient>
 </defs>
 </svg>
