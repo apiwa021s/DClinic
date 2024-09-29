@@ -56,7 +56,7 @@ export default function Header({ logoSrc, variant }) {
                       <Link href="/about">เกี่ยวกับเรา</Link>
                     </li>
                     <li>
-                      <Link href="/promotions">โปรโมชั่น</Link>
+                      <Link href="/pricing-plan">โปรโมชั่น</Link>
                     </li>
                     <li>
                       <Link href="/contact">ติดต่อเรา</Link>

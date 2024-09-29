@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from 'react';
 import Section from '@/app/ui/Section';
 import BannerSectionStyle10 from '@/app/ui/Section/BannerSection/BannerSectionStyle10';
@@ -6,145 +6,125 @@ import BannerSectionStyle3 from '@/app/ui/Section/BannerSection/BannerSectionSty
 import FaqSectionStyle4 from '@/app/ui/Section/FaqSection/FaqSectionStyle4';
 import PricingSection from '@/app/ui/Section/PricingSection';
 
-import bannerImg from '../../../../public/images/pricing_plan/banner_img.png'
-import bannerImgBtm from '../../../../public//images/pricing_plan/banner_img_2.png'
-import faqImg from '../../../../public/images/home_4/faq_img.jpeg'
-
+import bannerImg from '../../../../public/images/pricing_plan/banner_img.png';
+import bannerImgBtm from '../../../../public/images/pricing_plan/banner_img_2.png';
+import faqImg from '../../../../public/images/home_4/faq_img.jpeg';
 
 const pricingData = [
   {
-    title: 'Family Health Plan',
+    title: 'แพ็กเกจยกกระชับผิวหน้า',
     subTitle:
-      'Specialized care for seniors. Benefit from tailored assessments, fall prevention, and support for your golden years.',
-    price: '$249',
-    period: '/month',
+      'การยกกระชับผิวหน้าด้วยเทคโนโลยี Oligio เหมาะสำหรับผู้ที่ต้องการยกกระชับผิวหน้าโดยไม่ต้องผ่าตัด',
+    price: '฿7,999',
+    period: '/ครั้ง',
     featureList: [
-      'Whole Family Coverage',
-      'Reduced Vaccination Costs',
-      '24/7 Medical Advice',
+      'ปรึกษาแพทย์เฉพาะทาง',
+      'ยกกระชับหน้าและคอ',
+      'ปรับโครงสร้างผิว',
     ],
-    btnText: 'Get Started',
-    btnUrl: '/contact',
-    popular: false,
-  },
-  {
-    title: 'Wellness Plan',
-    subTitle:
-      'Comprehensive healthcare tailored to your needs. Experience unlimited care and exclusive access to wellness events.',
-    price: '$99',
-    period: '/month',
-    featureList: [
-      'Unlimited Check-ups',
-      'Discounts on Treatments',
-      'Annual Health Assessment',
-      'Priority Scheduling',
-      'Wellness Workshops',
-    ],
-    btnText: 'Get Started',
+    btnText: 'เริ่มต้นวันนี้',
     btnUrl: '/contact',
     popular: true,
   },
   {
-    title: 'Senior Wellness Plan',
+    title: 'แพ็กเกจทำตาสองชั้น',
     subTitle:
-      'Specialized care for seniors. Benefit from tailored assessments, fall prevention, and support for your golden years.',
-    price: '$149',
-    period: '/month',
+      'บริการทำตาสองชั้น โดยแพทย์ผู้เชี่ยวชาญ เพื่อดวงตาที่ดูคมชัดและสวยงาม',
+    price: '฿15,000',
+    period: '/ครั้ง',
     featureList: [
-      'Senior-Specific Care',
-      'Geriatric Assessments',
-      'Fall Prevention Programs',
-      'Medication Discounts',
+      'ปรึกษาแพทย์',
+      'ออกแบบชั้นตาให้เหมาะสม',
+      'การดูแลหลังการผ่าตัด',
     ],
-    btnText: 'Get Started',
+    btnText: 'เริ่มต้นวันนี้',
     btnUrl: '/contact',
     popular: false,
   },
   {
-    title: 'Dental Health Plan',
+    title: 'แพ็กเกจฟิลเลอร์',
     subTitle:
-      'Smile with confidence. Enjoy regular dental check-ups, emergency coverage, and exclusive discounts on dental procedures.',
-    price: '$79',
-    period: '/month',
+      'บริการฉีดฟิลเลอร์เพื่อเติมเต็มริ้วรอย และปรับรูปหน้าให้ดูอ่อนเยาว์และสมส่วน',
+    price: '฿9,999',
+    period: '/ซีซี',
     featureList: [
-      'Dental Check-ups',
-      'Procedure Discounts',
-      'Emergency Coverage',
-      'Oral Health Advice',
+      'ฟิลเลอร์แท้จากแบรนด์ชั้นนำ',
+      'ออกแบบรูปหน้าตามความต้องการ',
+      'การดูแลหลังการฉีด',
     ],
-    btnText: 'Get Started',
+    btnText: 'เริ่มต้นวันนี้',
     btnUrl: '/contact',
     popular: false,
   },
   {
-    title: `Women's Health Plan`,
-    subTitle: `Comprehensive women's health services. Receive expert gynecological care, family planning support, and prenatal/postnatal.`,
-    price: '$169',
-    period: '/month',
+    title: 'แพ็กเกจโบท็อกซ์',
+    subTitle:
+      'บริการฉีดโบท็อกซ์เพื่อลดริ้วรอยและปรับรูปหน้าให้เรียวกระชับอย่างเป็นธรรมชาติ',
+    price: '฿8,000',
+    period: '/ยูนิต',
     featureList: [
-      `Women's Health Services`,
-      'Gynecological Care',
-      'Fall Prevention Programs',
-      'Family Planning',
-      'Prenatal & Postnatal Support',
+      'โบท็อกซ์แท้จากบริษัทชั้นนำ',
+      'การออกแบบรูปหน้าด้วยโบท็อกซ์',
+      'ดูแลหลังการฉีด',
     ],
-    btnText: 'Get Started',
+    btnText: 'เริ่มต้นวันนี้',
     btnUrl: '/contact',
     popular: false,
   },
   {
-    title: 'Sports & Fitness Plan',
+    title: 'แพ็กเกจฉีดไขมัน',
     subTitle:
-      'Optimized for athletes. Access sports injury assessments, physiotherapy, and expert advice for peak performance and recovery.',
-    price: '$119',
-    period: '/month',
+      'บริการฉีดไขมันเพื่อปรับรูปหน้าและเติมเต็มส่วนต่าง ๆ ที่ต้องการให้ดูสมส่วน',
+    price: '฿25,000',
+    period: '/ครั้ง',
     featureList: [
-      'Sports Injury Assessments',
-      'Physiotherapy Sessions',
-      'Sports Medicine Experts',
-      'Fitness Support',
+      'ปรึกษาแพทย์เฉพาะทาง',
+      'ฉีดไขมันบริเวณใบหน้า',
+      'การดูแลหลังการฉีดไขมัน',
     ],
-    btnText: 'Get Started',
+    btnText: 'เริ่มต้นวันนี้',
     btnUrl: '/contact',
     popular: false,
   },
 ];
+
 const faqData = [
   {
-    title: 'What services does ProHealth offer?',
+    title: 'บริการทำตาสองชั้นของเรามีอะไรบ้าง?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'เรามีบริการทำตาสองชั้น โดยแพทย์ผู้เชี่ยวชาญที่มีประสบการณ์สูง เพื่อให้ดวงตาดูสวยและเป็นธรรมชาติ การรักษาทำได้ทั้งการผ่าตัดแบบปกติและเทคนิคพิเศษ',
   },
   {
-    title: 'How do I schedule an appointment with ProHealth?',
+    title: 'ฉีดฟิลเลอร์ต้องเตรียมตัวอย่างไร?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'ก่อนการฉีดฟิลเลอร์ ควรปรึกษาแพทย์เพื่อตรวจสอบสภาพผิวและวางแผนการฉีดให้เหมาะสม นอกจากนี้ควรหลีกเลี่ยงการใช้ยาแอสไพรินหรือยาอื่น ๆ ที่มีผลต่อการแข็งตัวของเลือด',
   },
   {
-    title: 'Do you accept insurance?',
+    title: 'โบท็อกซ์สามารถช่วยอะไรได้บ้าง?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'การฉีดโบท็อกซ์สามารถช่วยลดริ้วรอยบนใบหน้า และยังสามารถใช้ในการปรับรูปหน้าให้เรียวและกระชับขึ้นได้',
   },
   {
-    title: 'What should I bring to my appointment?',
+    title: 'ต้องทำอย่างไรหลังจากฉีดไขมัน?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'หลังการฉีดไขมัน ควรหลีกเลี่ยงการนวดหรือกดบริเวณที่ฉีด และควรปฏิบัติตามคำแนะนำของแพทย์อย่างเคร่งครัดเพื่อให้ผลลัพธ์ที่ดีที่สุด',
   },
   {
-    title: 'How do I request a prescription refill?',
+    title: 'ต้องทำการจองคิวล่วงหน้าอย่างไร?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'คุณสามารถติดต่อเราเพื่อทำการจองคิวล่วงหน้าผ่านเว็บไซต์หรือโทรติดต่อโดยตรง เรายินดีให้บริการและจัดเวลาที่สะดวกที่สุดสำหรับคุณ',
   },
 ];
+
 export default function PricingPlan() {
   return (
     <>
       <BannerSectionStyle3
         bgUrl="/images/pricing_plan/banner_bg.svg"
         imgUrl={bannerImg}
-        title="Find the Right Plan <br>for You"
-        subTitle="Explore Our Membership Options and Start Your Journey to Better Health"
-        btnText="Get Starter"
+        title="เลือกแพ็กเกจที่เหมาะสม <br>สำหรับคุณ"
+        subTitle="สำรวจแพ็กเกจความงามของเราและเริ่มเส้นทางสู่ความสวยงามของคุณ"
+        btnText="เริ่มต้นวันนี้"
         btnUrl="/contact"
       />
       <Section
@@ -156,7 +136,7 @@ export default function PricingPlan() {
         bottomXl={110}
       >
         <PricingSection
-          sectionTitle="Choose Your ProHealth <br />Membership Plan"
+          sectionTitle="เลือกแพ็กเกจความงามที่ดีที่สุดสำหรับคุณ"
           data={pricingData}
         />
       </Section>
@@ -170,7 +150,7 @@ export default function PricingPlan() {
         className="cs_gray_bg_1"
       >
         <FaqSectionStyle4
-          sectionTitle="Frequently Asked <br />Questions"
+          sectionTitle="คำถามที่พบบ่อย"
           data={faqData}
           faqImgUrl={faqImg}
           spiningImgUrl="/images/home_1/about_mini.svg"
@@ -184,7 +164,7 @@ export default function PricingPlan() {
       >
         <BannerSectionStyle10
           imgUrl={bannerImgBtm}
-          title="Choose Your Plan and Invest in Your Health Today!"
+          title="เลือกแพ็กเกจความงามและเริ่มลงทุนในความงามของคุณวันนี้!"
         />
       </Section>
     </>
