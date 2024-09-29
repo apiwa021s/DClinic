@@ -15,9 +15,7 @@ const menuDataOne = [
   { title: 'รีวิวลูกค้า', href: '/' },
 ];
 const menuDataTwo = [
-  { title: 'บล็อก', href: '/blog' },
   { title: 'ติดต่อเรา', href: '/contact' },
-  { title: 'FAQs', href: '/' },
   { title: 'นโยบายความเป็นส่วนตัว', href: '/' },
   { title: 'ข้อกำหนดและเงื่อนไข', href: '/' },
 ];
