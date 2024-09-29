@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import DropDown from './DropDown';
@@ -13,6 +13,7 @@ export default function Header({ logoSrc, variant }) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [sideNav, setSideNav] = useState(false);
   const [searchToggle, setSearchToggle] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -22,11 +23,11 @@ export default function Header({ logoSrc, variant }) {
       }
     };
     window.addEventListener('scroll', handleScroll);
-    // Cleanup function to remove the event listener
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
   return (
     <>
       <header
@@ -38,86 +39,31 @@ export default function Header({ logoSrc, variant }) {
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
                 <Link className="cs_site_branding" href="/">
-                  <Image src={logoSrc} alt="Logo" height={28} width={173} />
+                  <Image src={logoSrc} alt="D Bangkok Clinic Logo" height={28} width={173} />
                 </Link>
                 <nav className="cs_nav">
                   <ul
                     className={`${mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'
                       }`}
                   >
-                    <li className="menu-item-has-children">
+                    <li>
                       <Link href="/">หน้าหลัก</Link>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link href="/">Home Version-1</Link>
-                          </li>
-                          <li>
-                            <Link href="/home-v2">Home Version-2</Link>
-                          </li>
-                          <li>
-                            <Link href="/home-v3">Home Version-3</Link>
-                          </li>
-                          <li>
-                            <Link href="/home-v4">Home Version-4</Link>
-                          </li>
-                        </ul>
-                      </DropDown>
                     </li>
                     <li>
-                      <Link href="/about">About</Link>
+                      <Link href="/services">บริการของเรา</Link>
                     </li>
                     <li>
-                      <Link href="/doctors">Find Doctor</Link>
+                      <Link href="/about">เกี่ยวกับเรา</Link>
                     </li>
                     <li>
-                      <Link href="/blog">บทความ</Link>
-                    </li>
-                    <li className="menu-item-has-children">
-                      <Link href="/">Pages</Link>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link href="/appointments">Appointments</Link>
-                          </li>
-                          <li>
-                            <Link href="/departments">Departments</Link>
-                          </li>
-                          <li>
-                            <Link href="/departments/department-details">
-                              Department Details
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/doctors">Doctors</Link>
-                          </li>
-                          <li>
-                            <Link href="doctors/doctor-details">
-                              Doctor Details
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/pricing-plan">Pricing Plan</Link>
-                          </li>
-                          <li>
-                            <Link href="/gallery">Gallery</Link>
-                          </li>
-                          <li>
-                            <Link href="/timetable">Timetable</Link>
-                          </li>
-                        </ul>
-                      </DropDown>
+                      <Link href="/promotions">โปรโมชั่น</Link>
                     </li>
                     <li>
-                      <Link href="/contact">เกี่ยวกับเรา</Link>
+                      <Link href="/contact">ติดต่อเรา</Link>
                     </li>
                   </ul>
                   <span
-                    className={
-                      mobileToggle
-                        ? 'cs_menu_toggle cs_teggle_active'
-                        : 'cs_menu_toggle'
-                    }
+                    className={mobileToggle ? 'cs_menu_toggle cs_teggle_active' : 'cs_menu_toggle'}
                     onClick={() => setMobileToggle(!mobileToggle)}
                   >
                     <span></span>
@@ -190,30 +136,30 @@ export default function Header({ logoSrc, variant }) {
             <Image src="/images/icons/close.svg" alt="Close" height={28} width={28} />
           </button>
           <div className="cs_logo_box">
-            <Image src={logoSrc} alt="Logo" height={28} width={173} />
+            <Image src={logoSrc} alt="D Bangkok Clinic Logo" height={28} width={173} />
             <div className="cs_height_15" />
             <h3 className="cs_fs_24 cs_semibold mb-0">
-              Your Partner in Health and Wellness
+              ผู้เชี่ยวชาญด้านความงาม
             </h3>
           </div>
           <Spacing md="35" lg="35" xl="35" />
           <hr />
           <Spacing md="35" lg="50" xl="35" />
           <IconBoxStyle11
-            title="Phone"
-            subTitle="123-456-7890"
+            title="โทรศัพท์"
+            subTitle="02-123-4567"
             iconSrc="/images/contact/icon_1.svg"
           />
           <Spacing md="30" lg="30" xl="30" />
           <IconBoxStyle11
-            title="Email"
-            subTitle="hellocallcenter@gmail.com"
+            title="อีเมล"
+            subTitle="contact@dbangkokclinic.com"
             iconSrc="/images/contact/icon_2.svg"
           />
           <Spacing md="30" lg="30" xl="30" />
           <IconBoxStyle11
-            title="Location"
-            subTitle="123 Anywhere St., Any City, 12345"
+            title="ที่ตั้ง"
+            subTitle="123 ถนนสุขุมวิท, กรุงเทพฯ"
             iconSrc="/images/contact/icon_3.svg"
           />
           <Spacing md="60" lg="60" xl="60" />
@@ -229,7 +175,7 @@ export default function Header({ logoSrc, variant }) {
           <div className="container">
             <div className="cs_header_search_box">
               <form className="cs_search_form">
-                <input type="text" placeholder="Search Doctors" />
+                <input type="text" placeholder="ค้นหาบริการ" />
                 <button className="cs_search_btn">
                   <svg
                     width={18}

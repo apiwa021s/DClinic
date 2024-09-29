@@ -1,3 +1,4 @@
+"use client";
 import Section from "@/app/ui/Section";
 import AwardSectionStyle2 from "@/app/ui/Section/AwardSection/AwardSectionStyle2";
 import DepartmentSectionStyle2 from "@/app/ui/Section/DepartmentSection/DepartmentSectionStyle2";
@@ -8,13 +9,13 @@ import FunFactSection from "@/app/ui/Section/FunFactSection";
 import GallerySection from "@/app/ui/Section/GallerySection";
 import TeamSection from "@/app/ui/Section/TeamSection";
 
-import bannerImg from '../../../../public/images/about/banner_img.png'
-import whyChooseUsImg from '../../../../public//images/about/why_choose_us.jpeg'
+import bannerImg from '../../../../public/images/about/banner_img.png';
+import whyChooseUsImg from '../../../../public//images/about/why_choose_us.jpeg';
 
 const departmentData = [
   {
     title: 'ทำตาสองชั้น',
-    subTitle: 'บริการทำตาสองชั้นเพื่อให้ดวงตาสวยคมและดูธรรมชาติ',
+    subTitle: 'บริการทำตาสองชั้น เพื่อดวงตาที่สวยคมและดูธรรมชาติ',
     iconUrl: '/images/icons/eyelid.svg',
     href: '/services/double-eyelid',
   },
@@ -39,7 +40,7 @@ const departmentData = [
   {
     title: 'ฉีดไขมัน',
     subTitle: 'ปรับรูปหน้าและลดเหนียงด้วยการฉีดไขมัน',
-    iconUrl: '/images/icons/fat.svg',
+    iconUrl: '/images/icons/fat-injection.svg',
     href: '/services/fat-injection',
   },
 ];
@@ -47,26 +48,36 @@ const departmentData = [
 const featureListData = [
   {
     title: 'ทีมแพทย์ผู้เชี่ยวชาญ',
-    subTitle: 'ทีมแพทย์ที่มีประสบการณ์สูงในด้านการเสริมความงามและการดูแลผิวพรรณ',
+    subTitle:
+      'ทีมแพทย์ที่มีประสบการณ์สูงในด้านการเสริมความงามและการดูแลผิวพรรณ พร้อมให้บริการที่ดีที่สุดสำหรับคุณ',
     iconUrl: '/images/icons/professional.svg',
   },
   {
     title: 'บริการครบวงจร',
-    subTitle: 'เรามีบริการความงามหลากหลายทั้งผ่าตัดและไม่ผ่าตัดที่ตอบโจทย์ทุกความต้องการของคุณ',
+    subTitle:
+      'เรามีบริการหลากหลาย ไม่ว่าจะเป็นการเสริมความงามด้วยการผ่าตัด หรือไม่ผ่าตัด',
     iconUrl: '/images/icons/comprehensive.svg',
   },
   {
     title: 'เทคโนโลยีทันสมัย',
-    subTitle: 'ใช้เทคโนโลยีใหม่ล่าสุดในการให้บริการเพื่อความปลอดภัยและผลลัพธ์ที่ยอดเยี่ยม',
+    subTitle:
+      'เราใช้เทคโนโลยีล่าสุดในการดูแลผิวพรรณและความงามเพื่อผลลัพธ์ที่ดีที่สุด',
     iconUrl: '/images/icons/technology.svg',
+  },
+  {
+    title: 'บริการที่ใส่ใจลูกค้า',
+    subTitle:
+      'เราให้บริการที่เป็นมิตรและใส่ใจทุกรายละเอียด เพื่อความพึงพอใจของลูกค้าทุกคน',
+    iconUrl: '/images/icons/customer-service.svg',
   },
 ];
 
 const funFactData = [
   { number: '10+', title: 'ปีแห่งประสบการณ์' },
-  { number: '98%', title: 'ความพึงพอใจจากลูกค้า' },
-  { number: '3000+', title: 'ลูกค้าที่ใช้บริการต่อปี' },
-  { number: '5+', title: 'สถานที่ตั้งสะดวกสบาย' },
+  { number: '98%', title: 'ความพึงพอใจของลูกค้า' },
+  { number: '3000+', title: 'ลูกค้าที่ได้รับบริการต่อปี' },
+  { number: '20+', title: 'ทีมแพทย์ผู้เชี่ยวชาญ' },
+  { number: '5+', title: 'สาขาที่ให้บริการทั่วกรุงเทพฯ' },
 ];
 
 const teamData = [
@@ -74,7 +85,7 @@ const teamData = [
     imgUrl: '/images/about/doctor_1.png',
     name: 'คุณหมอจินตนา ศิริวงศ์',
     designation: 'ผู้เชี่ยวชาญด้านศัลยกรรมความงาม',
-    description: 'ผู้เชี่ยวชาญในการทำศัลยกรรมและการดูแลผิวพรรณ',
+    description: 'มีประสบการณ์ในการทำศัลยกรรมและดูแลผิวพรรณมามากกว่า 10 ปี',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
@@ -85,7 +96,18 @@ const teamData = [
     imgUrl: '/images/about/doctor_2.png',
     name: 'คุณหมออัญชลี พงศ์สุวรรณ',
     designation: 'ผู้เชี่ยวชาญด้านเลเซอร์และฟิลเลอร์',
-    description: 'ผู้เชี่ยวชาญในการใช้เลเซอร์และการฉีดฟิลเลอร์เพื่อความงาม',
+    description: 'เชี่ยวชาญในการใช้เลเซอร์และการฉีดฟิลเลอร์เพื่อความงาม',
+    social: [
+      { icon: 'fa6-brands:facebook-f', href: '/about' },
+      { icon: 'fa6-brands:linkedin-in', href: '/about' },
+      { icon: 'fa6-brands:twitter', href: '/about' },
+    ],
+  },
+  {
+    imgUrl: '/images/about/doctor_3.png',
+    name: 'คุณหมอวิทยา สมบัติ',
+    designation: 'ผู้เชี่ยวชาญด้านการปรับรูปหน้า',
+    description: 'มีประสบการณ์ในการปรับรูปหน้าให้สมส่วนและสวยงามตามธรรมชาติ',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
@@ -95,24 +117,29 @@ const teamData = [
 ];
 
 const galleryData = [
+  { imgUrl: '/images/about/portfolio_1_lg.jpeg' },
   { imgUrl: '/images/about/portfolio_2_lg.jpeg' },
   { imgUrl: '/images/about/portfolio_3_lg.jpeg' },
-  { imgUrl: '/images/about/portfolio_1_lg.jpeg' },
   { imgUrl: '/images/about/portfolio_4_lg.jpeg' },
+  { imgUrl: '/images/about/portfolio_5_lg.jpeg' },
 ];
 
 const awardData = [
   {
     iconUrl: '/images/icons/award.svg',
-    title: 'รางวัลคลินิกความงามยอดเยี่ยมแห่งปี',
+    title: 'รางวัลคลินิกเสริมความงามยอดเยี่ยมแห่งปี',
   },
   {
     iconUrl: '/images/icons/award.svg',
-    title: 'การรับรองมาตรฐานจากกระทรวงสาธารณสุข',
+    title: 'ได้รับการรับรองมาตรฐานระดับสากล',
   },
   {
     iconUrl: '/images/icons/award.svg',
-    title: 'รางวัลคลินิกที่มีความปลอดภัยสูงสุด',
+    title: 'รางวัลคลินิกปลอดภัยสูงสุด',
+  },
+  {
+    iconUrl: '/images/icons/award.svg',
+    title: 'การรับรองคุณภาพจากกระทรวงสาธารณสุข',
   },
 ];
 
@@ -127,7 +154,7 @@ export default function About() {
       />
       <Section topMd={200} topLg={150} topXl={110}>
         <DepartmentSectionStyle2
-          sectionTitle="บริการความงามที่เรามี"
+          sectionTitle="บริการเสริมความงามของเรา"
           sectionTitleUp="บริการของเรา"
           data={departmentData}
         />
@@ -148,14 +175,14 @@ export default function About() {
       <Section topMd={190} topLg={145} topXl={105}>
         <TeamSection
           sectionTitle="ทีมแพทย์ผู้เชี่ยวชาญ"
-          sectionTitleUp="พบกับทีม"
+          sectionTitleUp="พบกับทีมของเรา"
           data={teamData}
         />
       </Section>
       <Section topMd={170} topLg={120} topXl={80}>
         <GallerySection
-          sectionTitle="ดูสถานที่และ <br />กิจกรรมล่าสุดของเรา"
-          sectionTitleUp="ดูเพิ่มเติมที่"
+          sectionTitle="ผลงานและกิจกรรมล่าสุดของเรา"
+          sectionTitleUp="ดูเพิ่มเติม"
           data={galleryData}
         />
       </Section>
@@ -168,17 +195,17 @@ export default function About() {
         bottomXl={110}
       >
         <AwardSectionStyle2
-          sectionTitle="รางวัลและ <br />การรับรอง"
-          sectionTitleUp="ความภาคภูมิใจของเรา"
-          sectionSubTitle="เรามีความภาคภูมิใจที่ได้รับการรับรองจากหลากหลายองค์กรที่มีชื่อเสียงในด้านการเสริมความงาม."
+          sectionTitle="รางวัลและการรับรอง"
+          sectionTitleUp="ความสำเร็จของเรา"
+          sectionSubTitle="เราได้รับการยอมรับและรับรองจากองค์กรชั้นนำในด้านความงาม"
           data={awardData}
         />
       </Section>
       <Section className="cs_footer_margin_0">
         <BannerSectionStyle4
           bgUrl="/images/about/banner_bg_2.jpeg"
-          title="เปลี่ยนตัวคุณ <br />ให้สวยยิ่งขึ้น!"
-          subTitle="นัดหมายกับผู้เชี่ยวชาญด้านความงามของเราวันนี้!"
+          title="เปลี่ยนคุณให้สวยยิ่งขึ้นกับเรา!"
+          subTitle="นัดหมายเพื่อรับคำปรึกษาจากผู้เชี่ยวชาญด้านความงามของเราวันนี้!"
           center
         />
       </Section>
