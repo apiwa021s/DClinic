@@ -247,33 +247,12 @@ export default function Home() {
 
       {/* End About Section */}
 
-      {/* Start Departments Section */}
-      <Section topMd={185} topLg={150} topXl={110}>
-        <DepartmentSection
-          sectionTitle="โปรเสริมความงาม"
-          bgUrl="/images/home_1/department_bg.svg"
-          data={departmentData}
-        />
-      </Section>
-
-      {/* End Departments Section */}
-
       {/* Start Award Section */}
       <Section topMd={185} topLg={140} topXl={100}>
         <AwardSection sectionTitle="รางวัลของเรา" data={awardData} />
       </Section>
       {/* End Award Section */}
 
-
-      {/* Start Banner Section */}
-      <Section>
-        <Banner
-          bgUrl="/images/home_1/cta_bg.svg"
-          imgUrl={bannerImg}
-          title="เปลี่ยนคุณให้สวยขึ้นในทุกมุมมอง!"
-          subTitle="นัดหมายเพื่อรับคำปรึกษาจากทีมแพทย์ผู้เชี่ยวชาญด้านความงามได้แล้ววันนี้!"
-        />
-      </Section>
       <Section
         topMd={200}
         topLg={150}
