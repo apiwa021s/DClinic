@@ -1,4 +1,3 @@
-"use client"
 import Section from "@/app/ui/Section";
 import AwardSectionStyle2 from "@/app/ui/Section/AwardSection/AwardSectionStyle2";
 import DepartmentSectionStyle2 from "@/app/ui/Section/DepartmentSection/DepartmentSectionStyle2";
@@ -14,84 +13,68 @@ import whyChooseUsImg from '../../../../public//images/about/why_choose_us.jpeg'
 
 const departmentData = [
   {
-    title: 'Diagnostic testing',
-    subTitle:
-      'Blood tests, imaging studies, and other tests to diagnose health conditions',
-    iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
+    title: 'ทำตาสองชั้น',
+    subTitle: 'บริการทำตาสองชั้นเพื่อให้ดวงตาสวยคมและดูธรรมชาติ',
+    iconUrl: '/images/icons/eyelid.svg',
+    href: '/services/double-eyelid',
   },
   {
-    title: 'Rehabilitation services',
-    subTitle:
-      'Physical therapy, occupational therapy, and other services to help patients recover from injuries',
-    iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
+    title: 'เลเซอร์ Oligio',
+    subTitle: 'ยกกระชับผิวหน้าโดยไม่ต้องผ่าตัดด้วยเทคโนโลยีเลเซอร์ Oligio',
+    iconUrl: '/images/icons/laser.svg',
+    href: '/services/oligio-laser',
   },
   {
-    title: 'Preventive care',
-    subTitle:
-      'Annual checkups, immunizations, and health screenings care preventive',
-    iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
+    title: 'ฟิลเลอร์',
+    subTitle: 'เติมเต็มริ้วรอยและปรับรูปหน้าให้ดูเต็มอิ่มและอ่อนเยาว์',
+    iconUrl: '/images/icons/filler.svg',
+    href: '/services/filler',
   },
   {
-    title: 'Treatment for acute and chronic conditions',
-    subTitle:
-      'Medication management, disease management, and other treatments to improve health outcomes',
-    iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
+    title: 'โบท็อกซ์',
+    subTitle: 'ลดริ้วรอยและปรับรูปหน้าให้ดูเรียวกระชับและอ่อนเยาว์',
+    iconUrl: '/images/icons/botox.svg',
+    href: '/services/botox',
   },
   {
-    title: 'Mental health services',
-    subTitle:
-      'Counseling, therapy, and other services to help patients manage mental health conditions',
-    iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
+    title: 'ฉีดไขมัน',
+    subTitle: 'ปรับรูปหน้าและลดเหนียงด้วยการฉีดไขมัน',
+    iconUrl: '/images/icons/fat.svg',
+    href: '/services/fat-injection',
   },
 ];
 
 const featureListData = [
   {
-    title: 'Experienced Medical Professionals',
-    subTitle:
-      'Our team includes experienced doctors, nurses, <br />and other healthcare professionals who are <br />dedicated to providing the best possible care to <br />our patients.',
+    title: 'ทีมแพทย์ผู้เชี่ยวชาญ',
+    subTitle: 'ทีมแพทย์ที่มีประสบการณ์สูงในด้านการเสริมความงามและการดูแลผิวพรรณ',
     iconUrl: '/images/icons/professional.svg',
   },
   {
-    title: 'Comprehensive <br />Services',
-    subTitle:
-      'We offer a wide range of healthcare services, <br />from preventive care to specialized treatment <br />for complex conditions.',
+    title: 'บริการครบวงจร',
+    subTitle: 'เรามีบริการความงามหลากหลายทั้งผ่าตัดและไม่ผ่าตัดที่ตอบโจทย์ทุกความต้องการของคุณ',
     iconUrl: '/images/icons/comprehensive.svg',
   },
   {
-    title: 'Patient-centered <br />Approach',
-    subTitle:
-      'We believe in treating each patient as an <br />individual, and we take the time to understand <br />your unique health needs and concerns.',
-    iconUrl: '/images/icons/patient.svg',
-  },
-  {
-    title: 'State-of-the-art <br />Facilities',
-    subTitle:
-      'Our healthcare center is equipped with the <br />latest technology and equipment to provide our <br />patients with the most advanced care possible.',
-    iconUrl: '/images/icons/facilities.svg',
+    title: 'เทคโนโลยีทันสมัย',
+    subTitle: 'ใช้เทคโนโลยีใหม่ล่าสุดในการให้บริการเพื่อความปลอดภัยและผลลัพธ์ที่ยอดเยี่ยม',
+    iconUrl: '/images/icons/technology.svg',
   },
 ];
 
 const funFactData = [
-  { number: '20+', title: 'Years of experience' },
-  { number: '95%', title: 'Patient satisfaction rating' },
-  { number: '5000+', title: 'Patients served annually' },
-  { number: '10+', title: 'Healthcare providers on staff' },
-  { number: '22+', title: 'Convenient locations in the area' },
+  { number: '10+', title: 'ปีแห่งประสบการณ์' },
+  { number: '98%', title: 'ความพึงพอใจจากลูกค้า' },
+  { number: '3000+', title: 'ลูกค้าที่ใช้บริการต่อปี' },
+  { number: '5+', title: 'สถานที่ตั้งสะดวกสบาย' },
 ];
 
 const teamData = [
   {
     imgUrl: '/images/about/doctor_1.png',
-    name: 'Dr. James Lee, MD',
-    designation: 'Head of Cardiologist',
-    description:
-      'With expertise in managing complex heart conditions and performing advanced cardiac procedures',
+    name: 'คุณหมอจินตนา ศิริวงศ์',
+    designation: 'ผู้เชี่ยวชาญด้านศัลยกรรมความงาม',
+    description: 'ผู้เชี่ยวชาญในการทำศัลยกรรมและการดูแลผิวพรรณ',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
@@ -100,22 +83,9 @@ const teamData = [
   },
   {
     imgUrl: '/images/about/doctor_2.png',
-    name: 'Dr. John Smith, MD',
-    designation: 'Emergency Medicine Physician',
-    description:
-      'With expertise in treating acute illnesses and injuries in medicine physician',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
-  },
-  {
-    imgUrl: '/images/about/doctor_3.png',
-    name: 'Dr. Susan Bones, MD',
-    designation: 'Board-certified Pediatrician',
-    description:
-      'With experience in managing complex medical conditions in children',
+    name: 'คุณหมออัญชลี พงศ์สุวรรณ',
+    designation: 'ผู้เชี่ยวชาญด้านเลเซอร์และฟิลเลอร์',
+    description: 'ผู้เชี่ยวชาญในการใช้เลเซอร์และการฉีดฟิลเลอร์เพื่อความงาม',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
@@ -129,28 +99,22 @@ const galleryData = [
   { imgUrl: '/images/about/portfolio_3_lg.jpeg' },
   { imgUrl: '/images/about/portfolio_1_lg.jpeg' },
   { imgUrl: '/images/about/portfolio_4_lg.jpeg' },
-  { imgUrl: '/images/about/portfolio_5_lg.jpeg' },
 ];
 
 const awardData = [
   {
     iconUrl: '/images/icons/award.svg',
-    title: 'Malcolm Baldrige National Quality Award',
-  },
-  { iconUrl: '/images/icons/award.svg', title: 'HIMSS Davies Award' },
-  {
-    iconUrl: '/images/icons/award.svg',
-    title: 'Healthgrades National’s Best Hospital',
+    title: 'รางวัลคลินิกความงามยอดเยี่ยมแห่งปี',
   },
   {
     iconUrl: '/images/icons/award.svg',
-    title: 'Joint Commission Gold Seal of Approval',
+    title: 'การรับรองมาตรฐานจากกระทรวงสาธารณสุข',
+  },
+  {
+    iconUrl: '/images/icons/award.svg',
+    title: 'รางวัลคลินิกที่มีความปลอดภัยสูงสุด',
   },
 ];
-
-// export const metadata = {
-//   title: "About"
-// }
 
 export default function About() {
   return (
@@ -158,19 +122,19 @@ export default function About() {
       <BannerSectionStyle3
         bgUrl="/images/about/banner_bg.svg"
         imgUrl={bannerImg}
-        title="Welcome to <br />ProHealth Medical & Healthcare Center"
-        subTitle="Your Partner in Health and Wellness"
+        title="ยินดีต้อนรับสู่ <br />D Bangkok Clinic"
+        subTitle="ผู้เชี่ยวชาญด้านความงามและการดูแลผิวพรรณ"
       />
       <Section topMd={200} topLg={150} topXl={110}>
         <DepartmentSectionStyle2
-          sectionTitle="Provides Our Best Services"
-          sectionTitleUp="SERVICES"
+          sectionTitle="บริการความงามที่เรามี"
+          sectionTitleUp="บริการของเรา"
           data={departmentData}
         />
       </Section>
       <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
         <FeaturesSectionStyle2
-          sectionTitle="Why Choose Us"
+          sectionTitle="ทำไมถึงเลือกเรา"
           imgUrl={whyChooseUsImg}
           data={featureListData}
         />
@@ -183,15 +147,15 @@ export default function About() {
       </Section>
       <Section topMd={190} topLg={145} topXl={105}>
         <TeamSection
-          sectionTitle="Experts Doctor"
-          sectionTitleUp="MEET OUR"
+          sectionTitle="ทีมแพทย์ผู้เชี่ยวชาญ"
+          sectionTitleUp="พบกับทีม"
           data={teamData}
         />
       </Section>
       <Section topMd={170} topLg={120} topXl={80}>
         <GallerySection
-          sectionTitle="Our Facilities and <br />Latest Activities"
-          sectionTitleUp="HAVE A LOOK AT"
+          sectionTitle="ดูสถานที่และ <br />กิจกรรมล่าสุดของเรา"
+          sectionTitleUp="ดูเพิ่มเติมที่"
           data={galleryData}
         />
       </Section>
@@ -204,17 +168,17 @@ export default function About() {
         bottomXl={110}
       >
         <AwardSectionStyle2
-          sectionTitle="Winning Awards and <br />Recognition"
-          sectionTitleUp="AWARDS"
-          sectionSubTitle="We have been recognized for our commitment to <br />excellence in healthcare."
+          sectionTitle="รางวัลและ <br />การรับรอง"
+          sectionTitleUp="ความภาคภูมิใจของเรา"
+          sectionSubTitle="เรามีความภาคภูมิใจที่ได้รับการรับรองจากหลากหลายองค์กรที่มีชื่อเสียงในด้านการเสริมความงาม."
           data={awardData}
         />
       </Section>
       <Section className="cs_footer_margin_0">
         <BannerSectionStyle4
           bgUrl="/images/about/banner_bg_2.jpeg"
-          title="Don’t Let Your Health <br />Take a Backseat!"
-          subTitle="Schedule an appointment with one of our experienced <br />medical professionals today!"
+          title="เปลี่ยนตัวคุณ <br />ให้สวยยิ่งขึ้น!"
+          subTitle="นัดหมายกับผู้เชี่ยวชาญด้านความงามของเราวันนี้!"
           center
         />
       </Section>
