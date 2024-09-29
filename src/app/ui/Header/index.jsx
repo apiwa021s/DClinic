@@ -28,6 +28,11 @@ export default function Header({ logoSrc, variant }) {
     };
   }, []);
 
+  // ฟังก์ชันปิดเมนู
+  const closeMobileMenu = () => {
+    setMobileToggle(false);
+  };
+
   return (
     <>
       <header
@@ -47,19 +52,19 @@ export default function Header({ logoSrc, variant }) {
                       }`}
                   >
                     <li>
-                      <Link href="/">หน้าหลัก</Link>
+                      <Link href="/" onClick={closeMobileMenu}>หน้าหลัก</Link>
                     </li>
                     <li>
-                      <Link href="/departments">บริการของเรา</Link>
+                      <Link href="/departments" onClick={closeMobileMenu}>บริการของเรา</Link>
                     </li>
                     <li>
-                      <Link href="/about">เกี่ยวกับเรา</Link>
+                      <Link href="/about" onClick={closeMobileMenu}>เกี่ยวกับเรา</Link>
                     </li>
                     <li>
-                      <Link href="/pricing-plan">โปรโมชั่น</Link>
+                      <Link href="/pricing-plan" onClick={closeMobileMenu}>โปรโมชั่น</Link>
                     </li>
                     <li>
-                      <Link href="/contact">ติดต่อเรา</Link>
+                      <Link href="/contact" onClick={closeMobileMenu}>ติดต่อเรา</Link>
                     </li>
                   </ul>
                   <span
