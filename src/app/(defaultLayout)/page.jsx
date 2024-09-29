@@ -63,31 +63,32 @@ const brandData = [
 ];
 const faqData = [
   {
-    title: 'What services does ProHealth offer?',
+    title: 'D Bangkok Clinic มีบริการอะไรบ้าง?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'D Bangkok Clinic ให้บริการหลากหลายด้านความงาม เช่น การทำตาสองชั้น เลเซอร์ Oligio ฟิลเลอร์ โบท็อกซ์ และการฉีดไขมันเพื่อลดเหนียง เราใช้เทคโนโลยีที่ทันสมัยและปลอดภัยในทุกขั้นตอน.',
   },
   {
-    title: 'How do I schedule an appointment with ProHealth?',
+    title: 'ฉันจะทำการนัดหมายได้อย่างไร?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'คุณสามารถทำการนัดหมายผ่านทางเว็บไซต์ หรือโทรติดต่อที่เบอร์โทรของ D Bangkok Clinic เรามีทีมงานพร้อมให้บริการและแนะนำตารางเวลาที่เหมาะสมกับคุณ.',
   },
   {
-    title: 'Do you accept insurance?',
+    title: 'D Bangkok Clinic รับประกันสุขภาพหรือไม่?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'D Bangkok Clinic ยอมรับการชำระเงินด้วยเงินสดและบัตรเครดิต สำหรับข้อมูลเกี่ยวกับการประกันสุขภาพ กรุณาติดต่อคลินิกเพื่อสอบถามเพิ่มเติม.',
   },
   {
-    title: 'What should I bring to my appointment?',
+    title: 'ควรเตรียมตัวอย่างไรก่อนเข้ารับบริการ?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'กรุณานำบัตรประชาชนและข้อมูลทางการแพทย์ที่เกี่ยวข้องมาด้วย หากคุณมีอาการแพ้หรือกำลังใช้ยารักษา กรุณาแจ้งทีมแพทย์ก่อนรับบริการ.',
   },
   {
-    title: 'How do I request a prescription refill?',
+    title: 'ฉันจะขอรับยาหรือเวชภัณฑ์เพิ่มเติมได้อย่างไร?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'หากคุณต้องการยาหรือเวชภัณฑ์เพิ่มเติม กรุณาติดต่อคลินิกเพื่อทำการนัดหมายหรือปรึกษาแพทย์เกี่ยวกับการต่ออายุยาหรือรับคำแนะนำเพิ่มเติม.',
   },
 ];
+
 const blogData = [
   {
     title:
@@ -143,41 +144,43 @@ const awardData = [
 ];
 const departmentData = [
   {
-    title: 'Emergency Department',
-    iconUrl: '/images/home_1/department_icon_1.svg',
-    href: '/departments/department-details',
+    title: 'โปรทำตาสองชั้น ลด 20%',
+    iconUrl: '/images/home_1/double_eyelid.svg',
+    href: '/promotions/double-eyelid',
   },
   {
-    title: 'Pediatric Departement',
-    iconUrl: '/images/home_1/department_icon_2.svg',
-    href: '/departments/department-details',
+    title: 'เลเซอร์ Oligio ยกกระชับ ลด 15%',
+    iconUrl: '/images/home_1/oligio_laser.svg',
+    href: '/promotions/oligio-laser',
   },
   {
-    title: 'Gynecology Department',
-    iconUrl: '/images/home_1/department_icon_3.svg',
-    href: '/departments/department-details',
+    title: 'ฟิลเลอร์ แก้ม/ปาก เริ่มต้นเพียง 9,999 บาท',
+    iconUrl: '/images/home_1/filler.svg',
+    href: '/promotions/filler',
   },
   {
-    title: 'Cardiology Department',
-    iconUrl: '/images/home_1/department_icon_4.svg',
-    href: '/departments/department-details',
+    title: 'โบท็อกซ์ ลดริ้วรอย 10 จุด เริ่มต้นที่ 12,000 บาท',
+    iconUrl: '/images/home_1/botox.svg',
+    href: '/promotions/botox',
   },
   {
-    title: 'Neurology Department',
-    iconUrl: '/images/home_1/department_icon_5.svg',
-    href: '/departments/department-details',
+    title: 'ฉีดไขมัน ลดเหนียง พิเศษ 25,000 บาท',
+    iconUrl: '/images/home_1/fat_injection.svg',
+    href: '/promotions/fat-injection',
   },
   {
-    title: 'Psychiatry Department',
-    iconUrl: '/images/home_1/department_icon_6.svg',
-    href: '/departments/department-details',
+    title: 'ทรีทเม้นต์บำรุงผิวหน้า ซื้อ 1 แถม 1',
+    iconUrl: '/images/home_1/facial_treatment.svg',
+    href: '/promotions/facial-treatment',
   },
 ];
+
+
 
 export default function Home() {
   return (
     <>
-    
+
       <Hero
         title="D Bangkok Clinic"
         subTitle="ยินดีต้อนรับสู่ ดีแบ็งค็อกคลินิกเวชกรรม คลินิกความงามย่านทองหล่อ ใกล้กับ BTS ทองหล่อ ทางออก 3 เราพร้อมให้บริการเสริมความสวยงามหลากหลาย ด้วยทีมแพทย์ผู้เชี่ยวชาญ"
@@ -196,11 +199,11 @@ export default function Home() {
           },
           {
             title: 'Location',
-            subTitle: 'New York, US',
+            subTitle: ' BTS ทองหล่อ ทางออก 3',
             iconUrl: '/images/icons/pin.svg',
           },
         ]}
-        btnText="Book Now"
+        btnText="จองเลย"
         btnUrl="/appointments"
       />
 
@@ -219,38 +222,39 @@ export default function Home() {
 
       {/* Start About Section */}
       <Section>
-  <AboutSection
-    imgUrl={aboutImage}
-    spiningImgUrl="/images/home_1/about_mini.svg"
-    title="เกี่ยวกับเรา"
-    subTitle="D Bangkok Clinic"
-    featureList={[
-      {
-        featureListTitle:
-          'D Bangkok Clinic - คลินิกความงามที่คุณวางใจ',
-        featureListSubTitle:
-          'เราเป็นคลินิกความงามที่ตั้งอยู่ในย่านทองหล่อ พร้อมทีมแพทย์ผู้เชี่ยวชาญที่มีประสบการณ์สูง เรามุ่งมั่นที่จะให้บริการด้วยความเอาใจใส่ และใช้เทคโนโลยีที่ทันสมัยที่สุดเพื่อตอบสนองความต้องการของลูกค้าทุกท่าน.',
-      },
-      {
-        featureListTitle:
-          'บริการที่หลากหลายและครอบคลุมทุกความต้องการ',
-        featureListSubTitle:
-          'เรามีบริการเสริมความงามที่ครอบคลุม ไม่ว่าจะเป็นการทำตาสองชั้น การใช้เลเซอร์ในการยกกระชับผิว ฟิลเลอร์ โบท็อกซ์ และการฉีดไขมันเพื่อลดเหนียง เรามั่นใจว่าทุกบริการของเราจะช่วยเสริมความงามและเพิ่มความมั่นใจให้กับคุณ.',
-      },
-    ]}
-  />
-</Section>
+        <AboutSection
+          imgUrl={aboutImage}
+          spiningImgUrl="/images/home_1/about_mini.svg"
+          title="เกี่ยวกับเรา"
+          subTitle="D Bangkok Clinic"
+          featureList={[
+            {
+              featureListTitle:
+                'D Bangkok Clinic - คลินิกความงามที่คุณวางใจ',
+              featureListSubTitle:
+                'เราเป็นคลินิกความงามที่ตั้งอยู่ในย่านทองหล่อ พร้อมทีมแพทย์ผู้เชี่ยวชาญที่มีประสบการณ์สูง เรามุ่งมั่นที่จะให้บริการด้วยความเอาใจใส่ และใช้เทคโนโลยีที่ทันสมัยที่สุดเพื่อตอบสนองความต้องการของลูกค้าทุกท่าน.',
+            },
+            {
+              featureListTitle:
+                'บริการที่หลากหลายและครอบคลุมทุกความต้องการ',
+              featureListSubTitle:
+                'เรามีบริการเสริมความงามที่ครอบคลุม ไม่ว่าจะเป็นการทำตาสองชั้น การใช้เลเซอร์ในการยกกระชับผิว ฟิลเลอร์ โบท็อกซ์ และการฉีดไขมันเพื่อลดเหนียง เรามั่นใจว่าทุกบริการของเราจะช่วยเสริมความงามและเพิ่มความมั่นใจให้กับคุณ.',
+            },
+          ]}
+        />
+      </Section>
 
       {/* End About Section */}
 
       {/* Start Departments Section */}
       <Section topMd={185} topLg={150} topXl={110}>
-        <DepartmentSection
-          sectionTitle="Departments"
-          bgUrl="/images/home_1/department_bg.svg"
-          data={departmentData}
-        />
-      </Section>
+  <DepartmentSection
+    sectionTitle="โปรเสริมความงาม"
+    bgUrl="/images/home_1/department_bg.svg"
+    data={departmentData}
+  />
+</Section>
+
       {/* End Departments Section */}
 
       {/* Start Award Section */}
@@ -297,23 +301,24 @@ export default function Home() {
       {/* End Blog Section */}
 
       {/* Start Appointment Section */}
-      <Section topMd={190} topLg={145} topXl={105} id="appointment">
+      {/* <Section topMd={190} topLg={145} topXl={105} id="appointment">
         <AppointmentSection
           sectionTitle="Appointment"
           sectionTitleUp="BOOK AN"
           imgUrl={appointmentImg}
         />
-      </Section>
+      </Section> */}
       {/* End Appointment Section */}
 
       {/* Start FAQ Section */}
       <Section topMd={190} topLg={145} topXl={105}>
         <FaqSection
           data={faqData}
-          sectionTitle="Usually Asked"
-          sectionTitleUp="What People"
+          sectionTitle="คำถามที่พบบ่อย"
+          sectionTitleUp="ลูกค้าสอบถามบ่อย"
         />
       </Section>
+
       {/* End FAQ Section */}
 
       {/* Start Brand Section */}
