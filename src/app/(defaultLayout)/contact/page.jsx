@@ -12,8 +12,8 @@ export default function Contact() {
       <BannerSectionStyle5
         bgUrl="/images/contact/banner_bg.svg"
         imgUrl={bannerImg}
-        title="Contact Us"
-        subTitle="Kindly reach us to get the fastest response and treatment"
+        title="ติดต่อเรา"
+        subTitle="ติดต่อเราเพื่อรับคำปรึกษาด้านความงามและบริการที่รวดเร็วที่สุด"
       />
       <div className="container cs_mt_minus_110">
         <div className="row">
@@ -30,7 +30,7 @@ export default function Contact() {
         bottomLg={150}
         bottomXl={110}
       >
-        <ContactInfoSection sectionTitle="Find Us Here" />
+        <ContactInfoSection sectionTitle="ค้นหาคลินิกของเราได้ที่นี่" />
       </Section>
     </>
   );
