@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from 'react';
 import ContactInfoWidget from '../Widget/ContactInfoWidget';
 import MenuWidget from '../Widget/MenuWidget';
@@ -7,19 +7,19 @@ import Newsletter from '../Widget/Newsletter';
 import TextWidget from '../Widget/TextWidget';
 import Image from 'next/image';
 const menuDataOne = [
-  { title: 'About Us', href: '/about' },
-  { title: 'Departments', href: '/departments' },
-  { title: 'Doctors', href: '/doctors' },
-  { title: 'Timetable', href: '/timetable' },
-  { title: 'Appointment', href: '/appointments' },
-  { title: 'Testimonials', href: '/' },
+  { title: 'เกี่ยวกับเรา', href: '/about' },
+  { title: 'บริการ', href: '/services' },
+  { title: 'ทีมแพทย์', href: '/doctors' },
+  { title: 'ตารางเวลา', href: '/timetable' },
+  { title: 'นัดหมาย', href: '/appointments' },
+  { title: 'รีวิวลูกค้า', href: '/' },
 ];
 const menuDataTwo = [
-  { title: 'Blog', href: '/blog' },
-  { title: 'Contact Us', href: '/contact' },
+  { title: 'บล็อก', href: '/blog' },
+  { title: 'ติดต่อเรา', href: '/contact' },
   { title: 'FAQs', href: '/' },
-  { title: 'Privacy Policy', href: '/' },
-  { title: 'Terms and Conditions', href: '/' },
+  { title: 'นโยบายความเป็นส่วนตัว', href: '/' },
+  { title: 'ข้อกำหนดและเงื่อนไข', href: '/' },
 ];
 
 export default function Footer() {
@@ -37,10 +37,10 @@ export default function Footer() {
             src="/images/logo_icon.svg"
             alt="Logo Icon"
             className="cs_footer_brand_icon"
-            height={49} 
+            height={49}
             width={51}
           />
-          <h2 className="cs_footer_brand_text">ProHealth</h2>
+          <h2 className="cs_footer_brand_text">D Bangkok Clinic</h2>
         </div>
       </div>
       <div className="cs_footer_main">
@@ -48,7 +48,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-4">
               <div className="cs_footer_item">
-                <TextWidget text="ProHealth Medical & <br />Healthcare Center" />
+                <TextWidget text="D Bangkok Clinic <br />คลินิกเวชกรรมความงาม" />
                 <ContactInfoWidget />
               </div>
             </div>
@@ -65,8 +65,8 @@ export default function Footer() {
             <div className="col-lg-4">
               <div className="cs_footer_item">
                 <Newsletter
-                  title="Be Our Subscribers"
-                  subTitle="To get the latest news about health from our experts"
+                  title="สมัครรับข่าวสาร"
+                  subTitle="เพื่อรับข่าวสารและโปรโมชั่นล่าสุดจากเรา"
                 />
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function Footer() {
           <div className="cs_footer_bottom_in">
             <SocialWidget />
             <div className="cs_copyright">
-              Copyright © 2024 Pro Health. All rights reserved.
+              Copyright © 2024 D Bangkok Clinic. All rights reserved.
             </div>
           </div>
         </div>
