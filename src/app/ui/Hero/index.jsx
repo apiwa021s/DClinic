@@ -36,7 +36,7 @@ export default function Hero({
             </div> */}
           </div>
           <div className="cs_hero_img">
-            <Image src={imgUrl} alt="Hero" placeholder="blur" />
+            {/* <Image src={imgUrl} alt="Hero" placeholder="blur" /> */}
           </div>
           <div className="cs_hero_info_wrap cs_shadow_1 cs_white_bg cs_radius_15">
             {infoList.map((item, index) => (
