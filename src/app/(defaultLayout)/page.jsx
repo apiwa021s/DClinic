@@ -185,7 +185,7 @@ export default function Home() {
       <Hero
         title="D Bangkok Clinic"
         subTitle="ยินดีต้อนรับสู่ ดีแบ็งค็อกคลินิกเวชกรรม คลินิกความงามย่านทองหล่อ ใกล้กับ BTS ทองหล่อ ทางออก 3 เราพร้อมให้บริการเสริมความสวยงามหลากหลาย ด้วยทีมแพทย์ผู้เชี่ยวชาญ"
-        bgUrl="/images/home_1/hero_bg.jpg"
+        bgUrl="/images/departments/banner_bg.svg"
         imgUrl={heroImage}
         infoList={[
           {
