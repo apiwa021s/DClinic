@@ -264,22 +264,6 @@ export default function Home() {
       </Section>
       {/* End Award Section */}
 
-      {/* Start Testimonial */}
-      <Section
-        topMd={185}
-        topLg={140}
-        topXl={100}
-        bottomMd={200}
-        bottomLg={150}
-        bottomXl={110}
-      >
-        <TestimonialSection
-          sectionTitle="รีวิวจากลูกค้าของเรา"
-          sectionTitleDown="ความพึงพอใจจากผู้ใช้บริการ"
-        />
-      </Section>
-
-      {/* End Testimonial */}
 
       {/* Start Banner Section */}
       <Section>
@@ -290,21 +274,6 @@ export default function Home() {
     subTitle="นัดหมายเพื่อรับคำปรึกษาจากทีมแพทย์ผู้เชี่ยวชาญด้านความงามได้แล้ววันนี้!"
   />
 </Section>
-
-      {/* End Banner Section */}
-
-      {/* Start FAQ Section */}
-      <Section topMd={190} topLg={145} topXl={105}>
-        <FaqSection
-          data={faqData}
-          sectionTitle="คำถามที่พบบ่อย"
-          sectionTitleUp="ลูกค้าสอบถามบ่อย"
-        />
-      </Section>
-
-      {/* End FAQ Section */}
-
-      {/* Start Brand Section */}
       <Section
         topMd={200}
         topLg={150}
