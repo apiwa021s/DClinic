@@ -365,10 +365,10 @@ hr {
     transition: all 0.4s ease-in-out;
   }
   &::before {
-    background-image: linear-gradient(134deg, #307bc4 0%, #274760 100%);
+    background-image: linear-gradient(134deg, #307bc4 0%, #bf923a 100%);
   }
   &::after {
-    background-image: linear-gradient(270deg, #307bc4 0%, #274760 100%);
+    background-image: linear-gradient(270deg, #307bc4 0%, #bf923a 100%);
     opacity: 0;
   }
   &:hover {
@@ -1276,7 +1276,7 @@ input::-ms-input-placeholder,
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #274760;
+    color: #bf923a;
     &:hover {
       color: $accent;
     }
