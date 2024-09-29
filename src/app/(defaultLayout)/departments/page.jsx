@@ -1,81 +1,79 @@
-
 import React from 'react';
 import Section from '@/app/ui/Section';
 import BannerSectionStyle5 from '@/app/ui/Section/BannerSection/BannerSectionStyle5';
 import BannerSectionStyle6 from '@/app/ui/Section/BannerSection/BannerSectionStyle6';
 import DepartmentSectionStyle3 from '@/app/ui/Section/DepartmentSection/DepartmentSectionStyle3';
 
-import bannerImg from '../../../../public/images/departments/banner_img.png'
-import bannerImg2 from '../../../../public/images/departments/banner_img_2.png'
-
+import bannerImg from '../../../../public/images/departments/banner_img.png';
+import bannerImg2 from '../../../../public/images/departments/banner_img_2.png';
 
 const departmentData = [
   {
     iconUrl: '/images/departments/icon_1.svg',
-    title: 'Emergency Department',
+    title: 'ทำตาสองชั้น',
     subTitle:
-      'This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.',
-    href: '/departments/department-details',
+      'บริการทำตาสองชั้น เพื่อดวงตาที่ดูคมชัดและสวยงามตามธรรมชาติ',
+    href: '/services/double-eyelid',
   },
   {
     iconUrl: '/images/departments/icon_1.svg',
-    title: 'Cardiology Department',
+    title: 'ฟิลเลอร์',
     subTitle:
-      'This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.',
-    href: '/departments/department-details',
+      'เติมเต็มริ้วรอย ปรับรูปหน้าให้ดูอ่อนเยาว์และสวยงาม',
+    href: '/services/filler',
   },
   {
     iconUrl: '/images/departments/icon_1.svg',
-    title: 'Pediatric Department',
+    title: 'โบท็อกซ์',
     subTitle:
-      'This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.',
-    href: '/departments/department-details',
+      'ลดริ้วรอยและปรับรูปหน้าให้เรียวกระชับ ดูอ่อนเยาว์และสวยงาม',
+    href: '/services/botox',
   },
   {
     iconUrl: '/images/departments/icon_1.svg',
-    title: 'Obstetrics and Gynecology',
+    title: 'เลเซอร์ Oligio',
     subTitle:
-      'This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.',
-    href: '/departments/department-details',
+      'ยกกระชับผิวหน้าและลดริ้วรอยโดยไม่ต้องผ่าตัด ด้วยเทคโนโลยีเลเซอร์ Oligio',
+    href: '/services/oligio-laser',
   },
   {
     iconUrl: '/images/departments/icon_1.svg',
-    title: 'Psychiatry Department',
+    title: 'ฉีดไขมัน',
     subTitle:
-      'This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.',
-    href: '/departments/department-details',
+      'บริการฉีดไขมันเพื่อปรับรูปหน้าและลดเหนียงอย่างเห็นผล',
+    href: '/services/fat-injection',
   },
   {
     iconUrl: '/images/departments/icon_1.svg',
-    title: 'Neurology Department',
+    title: 'นวดหน้า',
     subTitle:
-      'This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.',
-    href: '/departments/department-details',
+      'บริการนวดหน้าสำหรับการผ่อนคลายและฟื้นฟูผิวหน้า',
+    href: '/services/facial-massage',
   },
   {
     iconUrl: '/images/departments/icon_1.svg',
-    title: 'Occupational Therapy Department',
+    title: 'การดูแลผิวพรรณ',
     subTitle:
-      'This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.',
-    href: '/departments/department-details',
+      'บริการดูแลผิวพรรณที่หลากหลาย เพื่อความสวยงามและสุขภาพผิวที่ดี',
+    href: '/services/skin-care',
   },
   {
     iconUrl: '/images/departments/icon_1.svg',
-    title: 'Physical Therapy Department',
+    title: 'ยกกระชับใบหน้า',
     subTitle:
-      'This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.',
-    href: '/departments/department-details',
+      'บริการยกกระชับใบหน้าเพื่อความสวยงาม ดูอ่อนเยาว์ และปรับรูปหน้าให้ได้สัดส่วน',
+    href: '/services/facial-lifting',
   },
 ];
 
-export default function Departments() {
+export default function Services() {
   return (
     <>
       <BannerSectionStyle5
         bgUrl="/images/departments/banner_bg.svg"
         imgUrl={bannerImg}
-        title="Get to Know <br>ProHealth Departments"
-        subTitle="At ProHealth, we offer a wide range of medical and healthcare services that are designed to meet your individual needs and help you achieve optimal health."
+        title="บริการเสริมความงามของเรา"
+        subTitle="ที่ D Bangkok Clinic เรามีบริการเสริมความงามที่ครอบคลุมทุกความต้องการของคุณ เพื่อให้คุณสวยและมั่นใจมากขึ้น"
       />
       <Section bottomMd={140} bottomLg={100} bottomXl={60}>
         <DepartmentSectionStyle3 data={departmentData} />
@@ -83,8 +81,8 @@ export default function Departments() {
       <Section className="cs_footer_margin_0">
         <BannerSectionStyle6
           imgUrl={bannerImg2}
-          title="Don’t Let Your Health Take a Backseat!"
-          subTitle="Schedule an appointment with one of our <br />experienced medical professionals today!"
+          title="อย่ารอช้า ให้เราดูแลความงามของคุณ!"
+          subTitle="นัดหมายเพื่อรับบริการจากผู้เชี่ยวชาญด้านความงามของเราวันนี้!"
         />
       </Section>
     </>
