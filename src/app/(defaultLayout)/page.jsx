@@ -20,35 +20,37 @@ import appointmentImg from '../../../public/images/home_1/appointment.jpeg';
 
 const featureListData = [
   {
-    iconSrc: '/images/home_1/compassion.svg',
-    title: 'Compassion',
-    subTitle:
-      'We understand that seeking medical care can be a stressful and emotional experience, and we strive to create a welcoming and supportive environment that puts our patients at ease and every one.',
+    iconSrc: '/images/home_1/double-eyelid.svg',
+    title: 'ทำตาสองชั้น ปรับกล้ามเนื้อตา',
+    subTitle: 'บริการทำตาสองชั้นและปรับกล้ามเนื้อตา ให้ดวงตาสวย คมชัด ดูธรรมชาติ เหมาะกับใบหน้า.',
   },
   {
-    iconSrc: '/images/home_1/excellence.svg',
-    title: 'Excellence',
-    subTitle:
-      'We are committed to providing excellent medical care and services to our patients. We believe in continuously improving our skills, knowledge, and resources to ensure that we deliver the highest quality care possible.',
+    iconSrc: '/images/home_1/oligio-laser.svg',
+    title: 'Laser Oligio',
+    subTitle: 'นวัตกรรมการยกกระชับผิวด้วยเลเซอร์ Oligio ช่วยให้ผิวหน้าเต่งตึง ดูอ่อนเยาว์.',
   },
   {
-    iconSrc: '/images/home_1/integrity.svg',
-    title: 'Integrity',
-    subTitle: `We believe in practicing medicine with integrity and honesty. We are transparent in our communication and decision-making processes, and we always put our patient's interests first & provide best solution.`,
+    iconSrc: '/images/home_1/filler.svg',
+    title: 'Filler',
+    subTitle: 'ฟิลเลอร์ช่วยเติมเต็มผิว ลดริ้วรอย เพิ่มความอิ่มเอิบให้ใบหน้า ดูเป็นธรรมชาติ.',
   },
   {
-    iconSrc: '/images/home_1/respect.svg',
-    title: 'Respect',
-    subTitle:
-      'We treat all individuals with respect and dignity, regardless of their background, beliefs, or circumstances. We believe that every person deserves to be treated with compassion and kindness.',
+    iconSrc: '/images/home_1/botox.svg',
+    title: 'Botox',
+    subTitle: 'การฉีดโบท็อกซ์ช่วยลดริ้วรอยและปรับรูปหน้าให้ดูเรียว กระชับและอ่อนวัย.',
   },
   {
-    iconSrc: '/images/home_1/teamwork.svg',
-    title: 'Teamwork',
-    subTitle:
-      'We believe in working collaboratively with our team membersvand other healthcare professionals to provide comprehensive and effective care to our patients.',
+    iconSrc: '/images/home_1/fat-injection.svg',
+    title: 'ฉีดไขมัน ลดเหนียง',
+    subTitle: 'ฉีดไขมันเพื่อปรับรูปหน้าและลดเหนียง ช่วยให้ใบหน้าดูชัดและกระชับขึ้น.',
+  },
+  {
+    iconSrc: '/images/home_1/facial-massage.svg',
+    title: 'นวดหน้า',
+    subTitle: 'บริการนวดหน้าช่วยผ่อนคลายกล้ามเนื้อและกระตุ้นการไหลเวียนโลหิต ให้ผิวหน้าสดใส.',
   },
 ];
+
 const brandData = [
   { imgUrl: '/images/brand_1.png', imgAlt: 'Brand' },
   { imgUrl: '/images/brand_2.png', imgAlt: 'Brand' },
@@ -183,13 +185,13 @@ export default function Home() {
         imgUrl={heroImage}
         infoList={[
           {
-            title: 'Hotline',
-            subTitle: '123-456-7890',
+            title: 'โทร',
+            subTitle: '0616479191',
             iconUrl: '/images/contact/icon_1.svg',
           },
           {
-            title: 'Ambulance',
-            subTitle: '876-256-876',
+            title: 'Line',
+            subTitle: '@dbankgogclinic',
             iconUrl: '/images/icons/ambulance.svg',
           },
           {
@@ -217,21 +219,28 @@ export default function Home() {
 
       {/* Start About Section */}
       <Section>
-        <AboutSection
-          imgUrl={aboutImage}
-          spiningImgUrl="/images/home_1/about_mini.svg"
-          title="About Us"
-          subTitle="PRO HEALTH"
-          featureList={[
-            {
-              featureListTitle:
-                'ProHealth is a team of experienced medical professionals',
-              featureListSubTitle:
-                'Dedicated to providing top-quality healthcare services. We believe in a holistic approach to healthcare that focuses on treating the whole person, not just the illness or symptoms.',
-            },
-          ]}
-        />
-      </Section>
+  <AboutSection
+    imgUrl={aboutImage}
+    spiningImgUrl="/images/home_1/about_mini.svg"
+    title="เกี่ยวกับเรา"
+    subTitle="D Bangkok Clinic"
+    featureList={[
+      {
+        featureListTitle:
+          'D Bangkok Clinic - คลินิกความงามที่คุณวางใจ',
+        featureListSubTitle:
+          'เราเป็นคลินิกความงามที่ตั้งอยู่ในย่านทองหล่อ พร้อมทีมแพทย์ผู้เชี่ยวชาญที่มีประสบการณ์สูง เรามุ่งมั่นที่จะให้บริการด้วยความเอาใจใส่ และใช้เทคโนโลยีที่ทันสมัยที่สุดเพื่อตอบสนองความต้องการของลูกค้าทุกท่าน.',
+      },
+      {
+        featureListTitle:
+          'บริการที่หลากหลายและครอบคลุมทุกความต้องการ',
+        featureListSubTitle:
+          'เรามีบริการเสริมความงามที่ครอบคลุม ไม่ว่าจะเป็นการทำตาสองชั้น การใช้เลเซอร์ในการยกกระชับผิว ฟิลเลอร์ โบท็อกซ์ และการฉีดไขมันเพื่อลดเหนียง เรามั่นใจว่าทุกบริการของเราจะช่วยเสริมความงามและเพิ่มความมั่นใจให้กับคุณ.',
+      },
+    ]}
+  />
+</Section>
+
       {/* End About Section */}
 
       {/* Start Departments Section */}
