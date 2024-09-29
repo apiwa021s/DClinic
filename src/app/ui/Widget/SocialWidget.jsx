@@ -6,7 +6,7 @@ import React from 'react';
 export default function SocialWidget() {
   return (
     <div className="cs_social_links_wrap">
-      <h2>Follow Us</h2>
+      <h2>ติดตามเราที่</h2>
       <div className="cs_social_links">
         <Link href="/">
           <Icon icon="fa-brands:facebook-f" />
