@@ -63,12 +63,6 @@ export default function Footer() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="cs_footer_item">
-                <Newsletter
-                  title="สมัครรับข่าวสาร"
-                  subTitle="เพื่อรับข่าวสารและโปรโมชั่นล่าสุดจากเรา"
-                />
-              </div>
             </div>
           </div>
         </div>
