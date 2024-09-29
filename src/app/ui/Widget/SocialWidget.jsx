@@ -12,10 +12,7 @@ export default function SocialWidget() {
           <Icon icon="fa-brands:facebook-f" />
         </Link>
         <Link href="/">
-          <Icon icon="fa-brands:youtube" />
-        </Link>
-        <Link href="/">
-          <Icon icon="fa-brands:linkedin-in" />
+          <Icon icon="fa-brands:line" />
         </Link>
         <Link href="/">
           <Icon icon="fa-brands:twitter" />
