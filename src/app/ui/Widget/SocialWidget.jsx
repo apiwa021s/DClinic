@@ -8,16 +8,13 @@ export default function SocialWidget() {
     <div className="cs_social_links_wrap">
       <h2>ติดตามเราที่</h2>
       <div className="cs_social_links">
-        <Link href="/">
+        <Link href="https://www.facebook.com/dbangkokclinic/">
           <Icon icon="fa-brands:facebook-f" />
         </Link>
-        <Link href="/">
+        <Link href="https://line.me/R/ti/p/@555haawr?ts=06030418&oat_content=url">
           <Icon icon="fa-brands:line" />
         </Link>
-        <Link href="/">
-          <Icon icon="fa-brands:twitter" />
-        </Link>
-        <Link href="/">
+        <Link href="https://www.instagram.com/dbangkokclinic/">
           <Icon icon="fa-brands:instagram" />
         </Link>
       </div>

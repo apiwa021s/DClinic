@@ -207,7 +207,7 @@ export default function Home() {
           },
         ]}
         btnText="จองเลย"
-        btnUrl="/appointments"
+        btnUrl="https://line.me/R/ti/p/@555haawr?ts=06030418&oat_content=url"
       />
 
       {/* Start Feature Section */}

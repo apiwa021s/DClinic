@@ -5,7 +5,7 @@ import Footer from '../ui/Footer';
 export default function DefalultLayout({ children }) {
   return (
     <>
-      <Header logoSrc="/images/logo.svg" variant="cs_heading_color" />
+      <Header logoSrc="/images/logo.png" variant="cs_heading_color" />
       {children}
       <Footer />
     </>
