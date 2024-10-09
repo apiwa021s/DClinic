@@ -10,18 +10,18 @@ export default function Contact() {
   return (
     <>
       <BannerSectionStyle5
-        bgUrl="/images/contact/banner_bg.svg"
+        bgUrl="/images/departments/banner_bg.svg"
         imgUrl={bannerImg}
         title="ติดต่อเรา"
         subTitle="ติดต่อเราเพื่อรับคำปรึกษาด้านความงามและบริการที่รวดเร็วที่สุด"
       />
-      <div className="container cs_mt_minus_110">
+      {/* <div className="container cs_mt_minus_110">
         <div className="row">
           <div className="col-lg-10 offset-lg-1">
             <ContactForm />
           </div>
         </div>
-      </div>
+      </div> */}
       <Section
         topMd={200}
         topLg={150}

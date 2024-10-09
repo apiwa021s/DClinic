@@ -10,7 +10,7 @@ import GallerySection from "@/app/ui/Section/GallerySection";
 import TeamSection from "@/app/ui/Section/TeamSection";
 
 import bannerImg from '../../../../public/images/about/banner_img.png';
-import whyChooseUsImg from '../../../../public//images/about/why_choose_us.jpeg';
+import whyChooseUsImg from '../../../../public//images/service/1.jpg';
 
 const departmentData = [
   {
@@ -120,7 +120,7 @@ export default function About() {
   return (
     <>
       <BannerSectionStyle3
-        bgUrl="/images/about/banner_bg.svg"
+        bgUrl="/images/departments/banner_bg.svg"
         imgUrl={bannerImg}
         title="ยินดีต้อนรับสู่ <br />D Bangkok Clinic"
         subTitle="ผู้เชี่ยวชาญด้านความงามและการดูแลผิวพรรณ"
@@ -140,13 +140,13 @@ export default function About() {
           data={teamData}
         />
       </Section>
-      <Section topMd={170} topLg={120} topXl={80}>
+      {/* <Section topMd={170} topLg={120} topXl={80}>
         <GallerySection
           sectionTitle="ผลงานและกิจกรรมล่าสุดของเรา"
           sectionTitleUp="ดูเพิ่มเติม"
           data={galleryData}
         />
-      </Section>
+      </Section> */}
       {/* <Section
         topMd={190}
         topLg={145}
