@@ -9,7 +9,7 @@ import Image from 'next/image';
 const menuDataOne = [
   { title: 'เกี่ยวกับเรา', href: '/about' },
   { title: 'บริการ', href: '/services' },
-  { title: 'ทีมแพทย์', href: '/doctors' },
+  { title: 'ทีมแพทย์', href: '/about' },
   // { title: 'ตารางเวลา', href: '/timetable' },
   // { title: 'นัดหมาย', href: '/appointments' },
   { title: 'รีวิวลูกค้า', href: '/' },
