@@ -62,28 +62,20 @@ const featureListData = [
     title: 'เทคโนโลยีทันสมัย',
     subTitle:
       'เราใช้เทคโนโลยีล่าสุดในการดูแลผิวพรรณและความงามเพื่อผลลัพธ์ที่ดีที่สุด',
-    iconUrl: '/images/icons/technology.svg',
+    iconUrl: '/images/icons/comprehensive.svg',
   },
   {
     title: 'บริการที่ใส่ใจลูกค้า',
     subTitle:
       'เราให้บริการที่เป็นมิตรและใส่ใจทุกรายละเอียด เพื่อความพึงพอใจของลูกค้าทุกคน',
-    iconUrl: '/images/icons/customer-service.svg',
+    iconUrl: '/images/icons/comprehensive.svg',
   },
-];
-
-const funFactData = [
-  { number: '10+', title: 'ปีแห่งประสบการณ์' },
-  { number: '98%', title: 'ความพึงพอใจของลูกค้า' },
-  { number: '3000+', title: 'ลูกค้าที่ได้รับบริการต่อปี' },
-  { number: '20+', title: 'ทีมแพทย์ผู้เชี่ยวชาญ' },
-  { number: '5+', title: 'สาขาที่ให้บริการทั่วกรุงเทพฯ' },
 ];
 
 const teamData = [
   {
-    imgUrl: '/images/about/doctor_1.png',
-    name: 'คุณหมอจินตนา ศิริวงศ์',
+    imgUrl: '/images/service/6.jpg',
+    name: 'คุณหมอเป็นเอก ธงทอง',
     designation: 'ผู้เชี่ยวชาญด้านศัลยกรรมความงาม',
     description: 'มีประสบการณ์ในการทำศัลยกรรมและดูแลผิวพรรณมามากกว่า 10 ปี',
     social: [
@@ -93,8 +85,8 @@ const teamData = [
     ],
   },
   {
-    imgUrl: '/images/about/doctor_2.png',
-    name: 'คุณหมออัญชลี พงศ์สุวรรณ',
+    imgUrl: '/images/service/7.jpg',
+    name: 'คุณหมอเป็นหนึ่ง ธงทอง',
     designation: 'ผู้เชี่ยวชาญด้านเลเซอร์และฟิลเลอร์',
     description: 'เชี่ยวชาญในการใช้เลเซอร์และการฉีดฟิลเลอร์เพื่อความงาม',
     social: [
@@ -104,8 +96,8 @@ const teamData = [
     ],
   },
   {
-    imgUrl: '/images/about/doctor_3.png',
-    name: 'คุณหมอวิทยา สมบัติ',
+    imgUrl: '/images/service/8.jpg',
+    name: 'คุณหมอเป็นเลิศ ธงทอง',
     designation: 'ผู้เชี่ยวชาญด้านการปรับรูปหน้า',
     description: 'มีประสบการณ์ในการปรับรูปหน้าให้สมส่วนและสวยงามตามธรรมชาติ',
     social: [
@@ -124,25 +116,6 @@ const galleryData = [
   { imgUrl: '/images/about/portfolio_5_lg.jpeg' },
 ];
 
-const awardData = [
-  {
-    iconUrl: '/images/icons/award.svg',
-    title: 'รางวัลคลินิกเสริมความงามยอดเยี่ยมแห่งปี',
-  },
-  {
-    iconUrl: '/images/icons/award.svg',
-    title: 'ได้รับการรับรองมาตรฐานระดับสากล',
-  },
-  {
-    iconUrl: '/images/icons/award.svg',
-    title: 'รางวัลคลินิกปลอดภัยสูงสุด',
-  },
-  {
-    iconUrl: '/images/icons/award.svg',
-    title: 'การรับรองคุณภาพจากกระทรวงสาธารณสุข',
-  },
-];
-
 export default function About() {
   return (
     <>
@@ -152,24 +125,12 @@ export default function About() {
         title="ยินดีต้อนรับสู่ <br />D Bangkok Clinic"
         subTitle="ผู้เชี่ยวชาญด้านความงามและการดูแลผิวพรรณ"
       />
-      <Section topMd={200} topLg={150} topXl={110}>
-        <DepartmentSectionStyle2
-          sectionTitle="บริการเสริมความงามของเรา"
-          sectionTitleUp="บริการของเรา"
-          data={departmentData}
-        />
-      </Section>
+
       <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
         <FeaturesSectionStyle2
           sectionTitle="ทำไมถึงเลือกเรา"
           imgUrl={whyChooseUsImg}
           data={featureListData}
-        />
-      </Section>
-      <Section>
-        <FunFactSection
-          bgUrl="/images/about/fun_fact_bg.jpeg"
-          data={funFactData}
         />
       </Section>
       <Section topMd={190} topLg={145} topXl={105}>
@@ -186,7 +147,7 @@ export default function About() {
           data={galleryData}
         />
       </Section>
-      <Section
+      {/* <Section
         topMd={190}
         topLg={145}
         topXl={105}
@@ -208,7 +169,7 @@ export default function About() {
           subTitle="นัดหมายเพื่อรับคำปรึกษาจากผู้เชี่ยวชาญด้านความงามของเราวันนี้!"
           center
         />
-      </Section>
+      </Section> */}
     </>
   );
 }

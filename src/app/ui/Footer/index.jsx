@@ -25,7 +25,7 @@ export default function Footer() {
     <footer className="cs_footer cs_style_1 cs_heading_color">
       <div
         className="cs_footer_logo_wrap"
-        style={{ backgroundImage: 'url(/images/footer_bg_1.svg)' }}
+        style={{ backgroundColor:"#cfb18040" }}
       >
       </div>
       <div className="cs_footer_main">
