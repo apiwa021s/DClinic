@@ -10,8 +10,8 @@ const menuDataOne = [
   { title: 'เกี่ยวกับเรา', href: '/about' },
   { title: 'บริการ', href: '/services' },
   { title: 'ทีมแพทย์', href: '/doctors' },
-  { title: 'ตารางเวลา', href: '/timetable' },
-  { title: 'นัดหมาย', href: '/appointments' },
+  // { title: 'ตารางเวลา', href: '/timetable' },
+  // { title: 'นัดหมาย', href: '/appointments' },
   { title: 'รีวิวลูกค้า', href: '/' },
 ];
 const menuDataTwo = [
@@ -27,19 +27,6 @@ export default function Footer() {
         className="cs_footer_logo_wrap"
         style={{ backgroundImage: 'url(/images/footer_bg_1.svg)' }}
       >
-        <div
-          className="cs_footer_brand"
-          style={{ backgroundImage: 'url(/images/footer_logo_bg.svg)' }}
-        >
-          <Image
-            src="/images/logo_icon.svg"
-            alt="Logo Icon"
-            className="cs_footer_brand_icon"
-            height={49}
-            width={51}
-          />
-          <h2 className="cs_footer_brand_text">D Bangkok Clinic</h2>
-        </div>
       </div>
       <div className="cs_footer_main">
         <div className="container">

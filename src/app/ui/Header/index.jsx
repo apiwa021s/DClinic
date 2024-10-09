@@ -60,9 +60,9 @@ export default function Header({ logoSrc, variant }) {
                     <li>
                       <Link href="/about" onClick={closeMobileMenu}>เกี่ยวกับเรา</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href="/pricing-plan" onClick={closeMobileMenu}>โปรโมชั่น</Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link href="/contact" onClick={closeMobileMenu}>ติดต่อเรา</Link>
                     </li>
