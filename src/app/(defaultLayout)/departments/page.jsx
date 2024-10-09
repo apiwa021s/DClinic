@@ -78,13 +78,6 @@ export default function Services() {
       <Section bottomMd={140} bottomLg={100} bottomXl={60}>
         <DepartmentSectionStyle3 data={departmentData} />
       </Section>
-      <Section className="cs_footer_margin_0">
-        <BannerSectionStyle6
-          imgUrl={bannerImg2}
-          title="อย่ารอช้า ให้เราดูแลความงามของคุณ!"
-          subTitle="นัดหมายเพื่อรับบริการจากผู้เชี่ยวชาญด้านความงามของเราวันนี้!"
-        />
-      </Section>
     </>
   );
 }

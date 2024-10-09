@@ -4,19 +4,21 @@ import Hero from '../ui/Hero';
 import Section from '../ui/Section';
 import FeaturesSection from '../ui/Section/FeaturesSection';
 import AboutSection from '../ui/Section/AboutSection';
-import DepartmentSection from '../ui/Section/DepartmentSection';
-import AwardSection from '../ui/Section/AwardSection';
-import TestimonialSection from '../ui/Section/TestimonialSection';
-import Banner from '../ui/Section/BannerSection';
-import BlogSection from '../ui/Section/BlogSection';
-import AppointmentSection from '../ui/Section/AppointmentSection';
-import FaqSection from '../ui/Section/FaqSection';
-import BrandsSection from '../ui/Section/BrandsSection';
+import GallerySection from "@/app/ui/Section/GallerySection";
 // Large Images for blur placeholder
 import heroImage from '../../../public/images/home_1/hero_img.png';
-import aboutImage from '../../../public/images/home_1/about.png';
-import bannerImg from '../../../public/images/home_1/cta_img.png';
-import appointmentImg from '../../../public/images/home_1/appointment.jpeg';
+import aboutImage from '../../../public/images/service/4.jpg';
+
+const galleryData = [
+  { imgUrl: '/images/service/case_01.jpg' },
+  { imgUrl: '/images/service/case_02.jpg' },
+  { imgUrl: '/images/service/case_03.jpg' },
+  { imgUrl: '/images/service/Review_01.jpg' },
+  { imgUrl: '/images/service/Review_02.jpg' },
+  { imgUrl: '/images/service/Review_03.jpg' },
+  { imgUrl: '/images/service/Review_04.jpg' },
+  { imgUrl: '/images/service/Review_05.jpg' },
+];
 
 const featureListData = [
   {
@@ -210,7 +212,7 @@ export default function Home() {
 
       {/* Start Feature Section */}
       <Section
-        topMd={185}
+        topMd={20}
         topLg={140}
         topXl={100}
         bottomMd={185}
@@ -247,23 +249,13 @@ export default function Home() {
 
       {/* End About Section */}
 
-      {/* Start Award Section */}
-      <Section topMd={185} topLg={140} topXl={100}>
-        <AwardSection sectionTitle="รางวัลของเรา" data={awardData} />
+      <Section topMd={170} topLg={120} topXl={80}>
+        <GallerySection
+          sectionTitle="ผลงานและกิจกรรมล่าสุดของเรา"
+          sectionTitleUp="ดูเพิ่มเติม"
+          data={galleryData}
+        />
       </Section>
-      {/* End Award Section */}
-
-      <Section
-        topMd={200}
-        topLg={150}
-        topXl={110}
-        bottomMd={200}
-        bottomLg={150}
-        bottomXl={110}
-      >
-        <BrandsSection data={brandData} />
-      </Section>
-      {/* End Brand Section */}
     </>
   );
 }
