@@ -77,7 +77,7 @@ export default function Header({ logoSrc, variant }) {
               </div>
               <div className="cs_main_header_right">
                 <div className="cs_toolbox">
-                  <button
+                  {/* <button
                     className="cs_toolbox_btn cs_search_toggle_btn"
                     type="button"
                     onClick={() => setSearchToggle(!searchToggle)}
@@ -94,7 +94,7 @@ export default function Header({ logoSrc, variant }) {
                         fill="currentColor"
                       />
                     </svg>
-                  </button>
+                  </button> */}
                   <button
                     className="cs_toolbox_btn cs_sidebar_toggle_btn"
                     type="button"
