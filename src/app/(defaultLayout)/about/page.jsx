@@ -76,19 +76,8 @@ const teamData = [
   {
     imgUrl: '/images/service/6.jpg',
     name: 'คุณหมอเป็นเอก ธงทอง',
-    designation: 'ผู้เชี่ยวชาญด้านศัลยกรรมความงาม',
-    description: 'มีประสบการณ์ในการทำศัลยกรรมและดูแลผิวพรรณมามากกว่า 10 ปี',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
-  },
-  {
-    imgUrl: '/images/service/7.jpg',
-    name: 'คุณหมอเป็นหนึ่ง ธงทอง',
-    designation: 'ผู้เชี่ยวชาญด้านเลเซอร์และฟิลเลอร์',
-    description: 'เชี่ยวชาญในการใช้เลเซอร์และการฉีดฟิลเลอร์เพื่อความงาม',
+    designation: 'หมอตา',
+    description: '',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
@@ -97,9 +86,20 @@ const teamData = [
   },
   {
     imgUrl: '/images/service/8.jpg',
+    name: 'คุณหมอเป็นหนึ่ง ธงทอง',
+    designation: 'หมอตา',
+    description: '',
+    social: [
+      { icon: 'fa6-brands:facebook-f', href: '/about' },
+      { icon: 'fa6-brands:linkedin-in', href: '/about' },
+      { icon: 'fa6-brands:twitter', href: '/about' },
+    ],
+  },
+  {
+    imgUrl: '/images/service/7.jpg',
     name: 'คุณหมอเป็นเลิศ ธงทอง',
-    designation: 'ผู้เชี่ยวชาญด้านการปรับรูปหน้า',
-    description: 'มีประสบการณ์ในการปรับรูปหน้าให้สมส่วนและสวยงามตามธรรมชาติ',
+    designation: 'หมอตา',
+    description: '',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
